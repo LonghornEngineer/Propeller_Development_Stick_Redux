@@ -4894,7 +4894,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="U$1" library="PP_Aesthetics" deviceset="LHE_FRAME" device="">
 <attribute name="DNAME" value="Parker Dillmann"/>
 <attribute name="PNAME" value="Propeller Dev Stick"/>
-<attribute name="REVNUM" value="REV 2"/>
+<attribute name="REVNUM" value="REV 1"/>
 </part>
 <part name="X1" library="PP_FreqCtrl" deviceset="CRYSTAL" device="HC-49" value="ATS060CSM-1"/>
 <part name="PWR" library="led" deviceset="LED" device="SML0603"/>
@@ -5483,12 +5483,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="-116.84" y1="248.92" x2="-124.46" y2="248.92" width="0.1524" layer="91"/>
 <label x="-124.46" y="248.92" size="0.8128" layer="95" font="vector"/>
 </segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="-355.6" y1="246.38" x2="-355.6" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="-355.6" y1="246.38" x2="-353.06" y2="246.38" width="0.1524" layer="91"/>
-<label x="-355.6" y="246.38" size="0.8128" layer="95" font="vector"/>
-</segment>
 </net>
 <net name="SD_SCLK" class="0">
 <segment>
@@ -5891,9 +5885,19 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <junction x="-71.12" y="251.46"/>
 </segment>
 <segment>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="-101.6" y1="251.46" x2="-93.98" y2="251.46" width="0.1524" layer="91"/>
+<label x="-101.6" y="251.46" size="0.8128" layer="95" font="vector"/>
+</segment>
+<segment>
 <pinref part="U8" gate="G$1" pin="OUT"/>
 <wire x1="-43.18" y1="195.58" x2="-35.56" y2="195.58" width="0.1524" layer="91"/>
 <label x="-40.64" y="195.58" size="0.8128" layer="95" font="vector"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="-124.46" y1="251.46" x2="-116.84" y2="251.46" width="0.1524" layer="91"/>
+<label x="-124.46" y="251.46" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="PWREN" class="0">
@@ -5932,21 +5936,12 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="-35.56" y1="193.04" x2="-43.18" y2="193.04" width="0.1524" layer="91"/>
 <label x="-40.64" y="193.04" size="0.8128" layer="95" font="vector"/>
 </segment>
-<segment>
-<pinref part="J4" gate="G$1" pin="2"/>
-<wire x1="-101.6" y1="251.46" x2="-93.98" y2="251.46" width="0.1524" layer="91"/>
-<label x="-101.6" y="251.46" size="0.8128" layer="95" font="vector"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="-124.46" y1="251.46" x2="-116.84" y2="251.46" width="0.1524" layer="91"/>
-<label x="-124.46" y="251.46" size="0.8128" layer="95" font="vector"/>
-</segment>
 </net>
 <net name="VBUS_P1" class="0">
 <segment>
 <label x="-345.44" y="271.78" size="0.8128" layer="95" font="vector"/>
 <wire x1="-345.44" y1="246.38" x2="-350.52" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="-350.52" y1="246.38" x2="-355.6" y2="246.38" width="0.1524" layer="91"/>
 <junction x="-345.44" y="246.38"/>
 <wire x1="-345.44" y1="233.68" x2="-345.44" y2="246.38" width="0.1524" layer="91"/>
 <junction x="-345.44" y="246.38"/>
@@ -5961,6 +5956,9 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <junction x="-345.44" y="259.08"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="-350.52" y1="233.68" x2="-350.52" y2="246.38" width="0.1524" layer="91"/>
+<junction x="-350.52" y="246.38"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="-355.6" y1="246.38" x2="-355.6" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R16" gate="G$1" pin="2"/>
