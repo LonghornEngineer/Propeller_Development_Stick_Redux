@@ -4897,12 +4897,12 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <attribute name="REVNUM" value="REV 2"/>
 </part>
 <part name="X1" library="PP_FreqCtrl" deviceset="CRYSTAL" device="HC-49" value="ATS060CSM-1"/>
-<part name="PWR" library="led" deviceset="LED" device="SML0603"/>
+<part name="PWR" library="led" deviceset="LED" device="SML0603" value="598-8070-107F"/>
 <part name="U2" library="PP_DigitalIC" deviceset="FT230X" device="QFN-16" value="FT230XQ-R"/>
 <part name="C1" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value=".1uF"/>
 <part name="C2" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value=".1uF"/>
 <part name="R1" library="PP_Passives" deviceset="RESISTOR" device="0402" value="330"/>
-<part name="TX/RX" library="led" deviceset="LED" device="SML0603"/>
+<part name="TX/RX" library="led" deviceset="LED" device="SML0603" value="598-8020-107F "/>
 <part name="R2" library="PP_Passives" deviceset="RESISTOR" device="0402" value="330"/>
 <part name="C3" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value=".1uF"/>
 <part name="C4" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value=".1uF"/>
@@ -4933,14 +4933,14 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="C10" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value=".1uF"/>
 <part name="C11" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value=".1uF"/>
 <part name="U6" library="PP_PowerIC" deviceset="FIXED_VOLTAGE_REG" device="SOT-223" value="TS2937CW33"/>
-<part name="U7" library="PP_DiscreteSemi" deviceset="MOSFET_P-CHANNEL_SINGLE" device="SOT-23"/>
+<part name="U7" library="PP_DiscreteSemi" deviceset="MOSFET_P-CHANNEL_SINGLE" device="SOT-23" value="IRLML6401TRPBF"/>
 <part name="R15" library="PP_Passives" deviceset="RESISTOR" device="0402" value="1K"/>
 <part name="R16" library="PP_Passives" deviceset="RESISTOR" device="0402" value="100K"/>
-<part name="L1" library="PP_Passives" deviceset="RESISTOR" device="0603" value="  MI0603K300R-10"/>
+<part name="L1" library="PP_Passives" deviceset="RESISTOR" device="0603" value="MI0603K300R-10"/>
 <part name="C13" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value=".1uF"/>
 <part name="U$2" library="PP_Aesthetics" deviceset="LHE_LOGO" device="LHE_LOGO"/>
-<part name="J5" library="PP_Connectors" deviceset="PH_1X04" device="HEADER_PTH_ROUND"/>
-<part name="J6" library="PP_Connectors" deviceset="PH_1X04" device="HEADER_PTH_ROUND"/>
+<part name="J5" library="PP_Connectors" deviceset="PH_1X04" device="HEADER_PTH_ROUND" value="M20-7820442"/>
+<part name="J6" library="PP_Connectors" deviceset="PH_1X04" device="HEADER_PTH_ROUND" value="M20-7820442"/>
 <part name="U5" library="PP_DigitalIC" deviceset="AD799X" device="SOT-23-8" value="AD7999YRJZ-1500RL7"/>
 <part name="C14" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value=".1uF"/>
 <part name="U8" library="PP_PowerIC" deviceset="TPS2115" device="SON-8" value="TPS2115ADRBR"/>
@@ -4965,7 +4965,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <instance part="X1" gate="G$1" x="-144.78" y="254"/>
 <instance part="PWR" gate="G$1" x="-355.6" y="228.6" smashed="yes">
 <attribute name="NAME" x="-352.044" y="224.028" size="0.8128" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="-349.885" y="224.028" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="-360.045" y="224.028" size="0.8128" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="U2" gate="G$1" x="-307.34" y="241.3"/>
 <instance part="C1" gate="G$1" x="-345.44" y="231.14"/>
@@ -4973,7 +4973,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <instance part="R1" gate="G$1" x="-355.6" y="238.76" rot="R90"/>
 <instance part="TX/RX" gate="G$1" x="-355.6" y="208.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="-351.028" y="211.836" size="0.8128" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="-351.028" y="213.995" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="-355.6" y="203.835" size="0.8128" layer="96" font="vector"/>
 </instance>
 <instance part="R2" gate="G$1" x="-365.76" y="208.28" rot="R180"/>
 <instance part="C3" gate="G$1" x="-175.26" y="182.88" rot="R180"/>
