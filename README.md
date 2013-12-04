@@ -5,6 +5,8 @@ Tiny development board based on the Parallax Propeller. More information can be 
 
 http://longhornengineer.com/projects/pcb/propeller-development-stick-redux/
 
+Board Files are for Cadsoft Eagle V6.0+
+
 Created by:
 Parker Dillmann
 The Longhorn Engineer
