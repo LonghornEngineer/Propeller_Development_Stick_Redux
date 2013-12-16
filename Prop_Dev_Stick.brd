@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -119,10 +119,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="24.384" x2="63.246" y2="24.384" width="0.254" layer="20"/>
-<wire x1="63.246" y1="24.384" x2="63.246" y2="0" width="0.254" layer="20"/>
-<wire x1="63.246" y1="0" x2="0" y2="0" width="0.254" layer="20"/>
-<wire x1="0" y1="0" x2="0" y2="24.384" width="0.254" layer="20"/>
+<wire x1="0.254" y1="24.638" x2="63.5" y2="24.638" width="0" layer="20"/>
+<wire x1="63.5" y1="24.638" x2="63.5" y2="-0.254" width="0" layer="20"/>
+<wire x1="63.5" y1="-0.254" x2="0.254" y2="-0.254" width="0" layer="20"/>
+<wire x1="0.254" y1="-0.254" x2="0.254" y2="24.638" width="0" layer="20"/>
 <text x="3.048" y="2.159" size="0.8128" layer="21" font="vector">USB</text>
 <text x="5.334" y="2.159" size="0.8128" layer="21" font="vector">3.3V</text>
 <text x="10.922" y="2.159" size="0.8128" layer="21" font="vector">P0</text>
