@@ -3289,25 +3289,6 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 </library>
 <library name="PP_Connectors">
 <packages>
-<package name="47219-2001">
-<smd name="8" x="0" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="7" x="1.1" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="6" x="2.2" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="5" x="3.3" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="4" x="4.4" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="3" x="5.5" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="2" x="6.6" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="1" x="7.7" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="P$1" x="-2.38" y="5.7" dx="1.4" dy="2" layer="1"/>
-<smd name="P$2" x="11.37" y="5.7" dx="1.4" dy="2" layer="1"/>
-<smd name="P$3" x="11.37" y="-2.6" dx="1.4" dy="2" layer="1"/>
-<smd name="P$4" x="-2.38" y="-2.6" dx="1.4" dy="2" layer="1"/>
-<wire x1="-2.305" y1="9.35" x2="-2.305" y2="-5.15" width="0.127" layer="21"/>
-<wire x1="11.295" y1="9.35" x2="11.295" y2="-5.15" width="0.127" layer="21"/>
-<wire x1="-2.305" y1="9.35" x2="11.295" y2="9.35" width="0.127" layer="21"/>
-<wire x1="-2.305" y1="-5.15" x2="11.295" y2="-5.15" width="0.127" layer="21"/>
-<text x="-3" y="-1" size="0.8128" layer="21" font="vector" rot="R90">&gt;NAME</text>
-</package>
 <package name="10118193-0001LF">
 <smd name="3" x="0" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
 <smd name="4" x="0.65" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
@@ -3320,25 +3301,6 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <pad name="S1" x="-3.3" y="-0.135" drill="0.9" shape="long" rot="R180"/>
 <wire x1="-4.125" y1="-1.585" x2="4.125" y2="-1.585" width="0.127" layer="21"/>
 <text x="-4" y="3.54" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-</package>
-<package name="502570-0893">
-<smd name="8" x="0" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="7" x="1.1" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="6" x="2.2" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="5" x="3.3" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="4" x="4.4" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="3" x="5.5" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="2" x="6.6" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="1" x="7.7" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="SHIELD0" x="-3.75" y="2.9" dx="1.4" dy="1.73" layer="1" rot="R180"/>
-<smd name="SHIELD1" x="9.15" y="2.9" dx="1.4" dy="1.73" layer="1" rot="R180"/>
-<smd name="SHIELD3" x="-0.2" y="-11.575" dx="1.5" dy="1.15" layer="1"/>
-<smd name="SHIELD2" x="8.7" y="-11.575" dx="1.5" dy="1.15" layer="1"/>
-<wire x1="-5.08" y1="4.445" x2="10.795" y2="4.445" width="0.127" layer="21"/>
-<wire x1="10.795" y1="4.445" x2="10.795" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="10.795" y1="-12.7" x2="-5.08" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="4.445" width="0.127" layer="21"/>
-<text x="-5.08" y="5.08" size="0.8128" layer="21" font="vector">&gt;NAME</text>
 </package>
 <package name="HEADER_01X20_PTH_ROUND">
 <pad name="5" x="-13.97" y="0" drill="0.8"/>
@@ -3462,28 +3424,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="3.85" y1="-1.8" x2="-3.85" y2="-1.8" width="0.127" layer="21"/>
 <wire x1="-3.85" y1="-1.8" x2="-3.85" y2="8.7" width="0.127" layer="21"/>
 </package>
-<package name="SD-RSMT-2-MQ">
-<smd name="WP" x="-12.25" y="0" dx="0.7" dy="1.5" layer="1" rot="R180"/>
-<smd name="CARD_DETECT" x="-11.05" y="0" dx="0.7" dy="1.5" layer="1" rot="R180"/>
-<smd name="8" x="-9.75" y="0" dx="1" dy="1.5" layer="1" rot="R180"/>
-<smd name="7" x="-8.05" y="0" dx="1" dy="1.5" layer="1" rot="R180"/>
-<smd name="6" x="-5.62" y="0" dx="1" dy="1.5" layer="1" rot="R180"/>
-<smd name="5" x="-3.12" y="0" dx="1" dy="1.5" layer="1" rot="R180"/>
-<smd name="4" x="-0.62" y="0" dx="1" dy="1.5" layer="1" rot="R180"/>
-<smd name="3" x="1.88" y="0" dx="1" dy="1.5" layer="1" rot="R180"/>
-<smd name="2" x="4.38" y="0" dx="1" dy="1.5" layer="1" rot="R180"/>
-<smd name="1" x="6.88" y="0" dx="1" dy="1.5" layer="1" rot="R180"/>
-<smd name="9" x="9.38" y="0" dx="1" dy="1.5" layer="1" rot="R180"/>
-<smd name="GND_1" x="-14.28" y="-27.75" dx="2" dy="3" layer="1" rot="R180"/>
-<smd name="GND_2" x="15.82" y="-27.75" dx="2" dy="3" layer="1" rot="R180"/>
-<hole x="9.5" y="-2.8" drill="1.6"/>
-<hole x="-11.5" y="-2.8" drill="1.1"/>
-<wire x1="-13" y1="-1" x2="-13" y2="-31.6" width="0.127" layer="21"/>
-<wire x1="-13" y1="-31.6" x2="14.5" y2="-31.6" width="0.127" layer="21"/>
-<wire x1="14.5" y1="-31.6" x2="14.5" y2="-1" width="0.127" layer="21"/>
-<wire x1="14.5" y1="-1" x2="-13" y2="-1" width="0.127" layer="21"/>
-<text x="10.9" y="-0.8" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-</package>
 <package name="MOLEX_KK_4">
 <pad name="4" x="5.6388" y="0" drill="1.7018" shape="long" rot="R90"/>
 <pad name="3" x="1.6764" y="0" drill="1.7018" shape="long" rot="R90"/>
@@ -3514,22 +3454,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <text x="-7.62" y="10.16" size="0.8128" layer="95" font="vector">&gt;NAME</text>
 <text x="-7.62" y="-10.16" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
 <pin name="ID" x="5.08" y="-2.54" visible="pin" length="short" rot="R180"/>
-</symbol>
-<symbol name="SD_CARD">
-<wire x1="-2.54" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="17.78" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="17.78" width="0.254" layer="94"/>
-<pin name="RW" x="-5.08" y="15.24" visible="pin" length="short"/>
-<pin name="CS" x="-5.08" y="12.7" visible="pin" length="short"/>
-<pin name="DI" x="-5.08" y="10.16" visible="pin" length="short"/>
-<pin name="SCLK" x="-5.08" y="7.62" visible="pin" length="short"/>
-<pin name="D0" x="-5.08" y="5.08" visible="pin" length="short"/>
-<pin name="IRQ" x="-5.08" y="2.54" visible="pin" length="short"/>
-<pin name="3.3V" x="-5.08" y="-5.08" visible="pin" length="short"/>
-<pin name="GND" x="-5.08" y="-7.62" visible="pin" length="short"/>
-<text x="-2.54" y="20.32" size="0.8128" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-12.7" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 <symbol name="PH_1X20">
 <pin name="1" x="-5.08" y="25.4" visible="pin" length="short"/>
@@ -3610,58 +3534,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND SH_0 SH_1 SH_2 SH_3"/>
 <connect gate="G$1" pin="ID" pad="N/C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SD_CARD" prefix="SD" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="SD_CARD" x="-2.54" y="-5.08"/>
-</gates>
-<devices>
-<device name="47219-2001" package="47219-2001">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="4"/>
-<connect gate="G$1" pin="CS" pad="2"/>
-<connect gate="G$1" pin="D0" pad="7"/>
-<connect gate="G$1" pin="DI" pad="3"/>
-<connect gate="G$1" pin="GND" pad="6 P$1 P$2 P$3 P$4"/>
-<connect gate="G$1" pin="IRQ" pad="8"/>
-<connect gate="G$1" pin="RW" pad="1"/>
-<connect gate="G$1" pin="SCLK" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="502570-0893" package="502570-0893">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="5"/>
-<connect gate="G$1" pin="CS" pad="7"/>
-<connect gate="G$1" pin="D0" pad="2"/>
-<connect gate="G$1" pin="DI" pad="6"/>
-<connect gate="G$1" pin="GND" pad="3 SHIELD0 SHIELD1 SHIELD2 SHIELD3" route="any"/>
-<connect gate="G$1" pin="IRQ" pad="1"/>
-<connect gate="G$1" pin="RW" pad="8"/>
-<connect gate="G$1" pin="SCLK" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SD-RSMT-2-MQ" package="SD-RSMT-2-MQ">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="4"/>
-<connect gate="G$1" pin="CS" pad="1"/>
-<connect gate="G$1" pin="D0" pad="7"/>
-<connect gate="G$1" pin="DI" pad="2"/>
-<connect gate="G$1" pin="GND" pad="3 6 GND_1 GND_2"/>
-<connect gate="G$1" pin="IRQ" pad="8"/>
-<connect gate="G$1" pin="RW" pad="9"/>
-<connect gate="G$1" pin="SCLK" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4142,6 +4014,109 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </deviceset>
 </devicesets>
 </library>
+<library name="MF_Connectors">
+<packages>
+<package name="MICROSDSLOT-RIGHT">
+<description>&lt;b&gt;Description:&lt;/b&gt; Package for Micro SD Card Slot connector. Based on 4uconnector 15882.&lt;br&gt;</description>
+<smd name="PIN1" x="-1.93875" y="3.15125" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="PIN2" x="-0.83875" y="2.95125" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="PIN3" x="0.26125" y="3.15125" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="PIN4" x="1.36125" y="3.35125" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="PIN5" x="2.46125" y="3.15125" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="PIN6" x="3.56125" y="3.35125" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="PIN7" x="4.66125" y="3.15125" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="PIN8" x="5.76125" y="3.15125" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="G0" x="-6.58875" y="7.00125" dx="1.4" dy="1.9" layer="1"/>
+<smd name="G1" x="6.56125" y="6.00125" dx="1.4" dy="1.9" layer="1"/>
+<smd name="PIN9" x="4.96125" y="-7.14875" dx="1.8" dy="1.4" layer="1"/>
+<smd name="PIN10" x="-0.73875" y="-7.14875" dx="1.8" dy="1.4" layer="1"/>
+<wire x1="-7.025" y1="5.77625" x2="-7.025" y2="-7.625" width="0.127" layer="21"/>
+<wire x1="-7.025" y1="-7.625" x2="-1.91375" y2="-7.625" width="0.127" layer="21"/>
+<wire x1="6.19875" y1="-7.625" x2="7.025" y2="-7.625" width="0.127" layer="21"/>
+<wire x1="7.025" y1="-7.625" x2="7.025" y2="4.67625" width="0.127" layer="21"/>
+<wire x1="7.025" y1="7.28875" x2="7.025" y2="7.625" width="0.127" layer="21"/>
+<wire x1="7.025" y1="7.625" x2="-5.65" y2="7.625" width="0.127" layer="21"/>
+<text x="7.50125" y="-7.625" size="0.8128" layer="21" font="vector" ratio="16">&gt;NAME</text>
+<polygon width="0.127" layer="21">
+<vertex x="1.79875" y="7.42625"/>
+<vertex x="2.07375" y="7.42625"/>
+<vertex x="2.07375" y="6.87625"/>
+<vertex x="2.34875" y="6.87625"/>
+<vertex x="1.93625" y="6.46375"/>
+<vertex x="1.52375" y="6.87625"/>
+<vertex x="1.79875" y="6.87625"/>
+</polygon>
+<polygon width="0.127" layer="39">
+<vertex x="-7.41375" y="7.97625"/>
+<vertex x="-7.41375" y="-7.97375"/>
+<vertex x="7.41375" y="-7.97375"/>
+<vertex x="7.41375" y="7.97625"/>
+</polygon>
+<wire x1="-2.32625" y1="7.625" x2="-2.32625" y2="8.225" width="0.127" layer="51"/>
+<wire x1="6.19875" y1="7.625" x2="6.19875" y2="8.225" width="0.127" layer="51"/>
+<wire x1="-2.32625" y1="8.225" x2="6.19875" y2="8.225" width="0.127" layer="51"/>
+<wire x1="-2.32625" y1="8.225" x2="-2.32625" y2="9.225" width="0.127" layer="51"/>
+<wire x1="-2.32625" y1="9.225" x2="6.19875" y2="9.225" width="0.127" layer="51"/>
+<wire x1="6.19875" y1="9.225" x2="6.19875" y2="8.25125" width="0.127" layer="51"/>
+<wire x1="-2.32625" y1="9.225" x2="-2.32625" y2="12.6075" width="0.127" layer="51"/>
+<wire x1="-2.32625" y1="12.6075" x2="-2.00875" y2="12.925" width="0.127" layer="51" curve="-90"/>
+<wire x1="-2.00875" y1="12.925" x2="5.88125" y2="12.925" width="0.127" layer="51"/>
+<wire x1="5.88125" y1="12.925" x2="6.19875" y2="12.6075" width="0.127" layer="51" curve="-90"/>
+<wire x1="6.19875" y1="12.6075" x2="6.19875" y2="9.225" width="0.127" layer="51"/>
+<text x="6.47375" y="12.925" size="0.6096" layer="51" font="vector" ratio="16">Card Push Out</text>
+<text x="6.47375" y="9.225" size="0.6096" layer="51" font="vector" ratio="16">Card Lock Position</text>
+<text x="6.47375" y="8.225" size="0.6096" layer="51" font="vector" ratio="16">Card Push In</text>
+<wire x1="0.4" y1="-7.625" x2="3.72375" y2="-7.625" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SD_CARD">
+<description>&lt;b&gt;Description:&lt;/b&gt; Symbol for SD Card Slot connector.&lt;br&gt;</description>
+<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<pin name="RW" x="-10.16" y="10.16" visible="pin" length="short"/>
+<pin name="CS" x="-10.16" y="7.62" visible="pin" length="short"/>
+<pin name="DI" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="SCLK" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="D0" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="IRQ" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="3.3V" x="-10.16" y="-10.16" visible="pin" length="short"/>
+<pin name="GND" x="-10.16" y="-12.7" visible="pin" length="short"/>
+<text x="-7.62" y="15.24" size="0.8128" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="15.24" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
+<pin name="CRD_DTCT" x="-10.16" y="-7.62" visible="pin" length="short"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SD_CARD_SLOT" prefix="SD" uservalue="yes">
+<description>&lt;b&gt;Library:&lt;/b&gt;  MF_Connectors&lt;br/&gt;
+&lt;b&gt;Description:&lt;/b&gt; SD Card Connector&lt;br/&gt;</description>
+<gates>
+<gate name="G$1" symbol="SD_CARD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="RIGHT" package="MICROSDSLOT-RIGHT">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="PIN4"/>
+<connect gate="G$1" pin="CRD_DTCT" pad="PIN9 PIN10"/>
+<connect gate="G$1" pin="CS" pad="PIN2"/>
+<connect gate="G$1" pin="D0" pad="PIN7"/>
+<connect gate="G$1" pin="DI" pad="PIN3"/>
+<connect gate="G$1" pin="GND" pad="G0 G1 PIN6"/>
+<connect gate="G$1" pin="IRQ" pad="PIN8"/>
+<connect gate="G$1" pin="RW" pad="PIN1"/>
+<connect gate="G$1" pin="SCLK" pad="PIN5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4175,7 +4150,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="R5" library="PP_Passives" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="C12" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0603" value=".1uF"/>
 <part name="J1" library="PP_Connectors" deviceset="USB" device="10118193-0001LF" value="10118193-0001LF"/>
-<part name="SD1" library="PP_Connectors" deviceset="SD_CARD" device="502570-0893" value="502570-0893"/>
 <part name="R6" library="PP_Passives" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="R7" library="PP_Passives" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="R8" library="PP_Passives" deviceset="RESISTOR" device="0603" value="10K"/>
@@ -4210,6 +4184,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="U3" library="PP_PowerIC" deviceset="TPS2111" device="SON-8" value="TPS2113ADRBR"/>
 <part name="R3" library="PP_Passives" deviceset="RESISTOR" device="0603" value="100K"/>
 <part name="R18" library="PP_Passives" deviceset="RESISTOR" device="0603" value="25K"/>
+<part name="SD1" library="MF_Connectors" deviceset="SD_CARD_SLOT" device="RIGHT" value="MF-CON-MICROSDSLOT-RIGHT"/>
 </parts>
 <sheets>
 <sheet>
@@ -4243,7 +4218,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <instance part="R5" gate="G$1" x="-261.62" y="254" rot="R90"/>
 <instance part="C12" gate="G$1" x="-269.24" y="251.46" rot="R180"/>
 <instance part="J1" gate="G$1" x="-378.46" y="251.46"/>
-<instance part="SD1" gate="G$1" x="-228.6" y="195.58" rot="MR180"/>
 <instance part="R6" gate="G$1" x="-274.32" y="213.36" rot="MR90"/>
 <instance part="R7" gate="G$1" x="-269.24" y="213.36" rot="MR90"/>
 <instance part="R8" gate="G$1" x="-264.16" y="213.36" rot="MR90"/>
@@ -4278,6 +4252,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <instance part="U3" gate="G$1" x="-53.34" y="195.58"/>
 <instance part="R3" gate="G$1" x="-76.2" y="200.66" rot="R90"/>
 <instance part="R18" gate="G$1" x="-76.2" y="185.42" rot="R90"/>
+<instance part="SD1" gate="G$1" x="-223.52" y="190.5" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -4364,11 +4339,11 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="-269.24" y1="231.14" x2="-269.24" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SD1" gate="G$1" pin="GND"/>
 <wire x1="-233.68" y1="203.2" x2="-238.76" y2="203.2" width="0.1524" layer="91"/>
 <label x="-238.76" y="203.2" size="0.8128" layer="95" font="vector"/>
 <pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="-238.76" y1="208.28" x2="-238.76" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="SD1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="-58.42" y1="241.3" x2="-58.42" y2="238.76" width="0.1524" layer="91"/>
@@ -4676,7 +4651,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="-254" y1="220.98" x2="-248.92" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="-248.92" y1="220.98" x2="-243.84" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="-243.84" y1="220.98" x2="-243.84" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="SD1" gate="G$1" pin="3.3V"/>
 <wire x1="-243.84" y1="200.66" x2="-233.68" y2="200.66" width="0.1524" layer="91"/>
 <label x="-238.76" y="200.66" size="0.8128" layer="95" font="vector"/>
 <label x="-274.32" y="220.98" size="0.8128" layer="95" font="vector"/>
@@ -4701,6 +4675,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <junction x="-259.08" y="220.98"/>
 <junction x="-254" y="220.98"/>
 <junction x="-248.92" y="220.98"/>
+<pinref part="SD1" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
@@ -4757,11 +4732,11 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </net>
 <net name="SD_SCLK" class="0">
 <segment>
-<pinref part="SD1" gate="G$1" pin="SCLK"/>
 <wire x1="-233.68" y1="187.96" x2="-259.08" y2="187.96" width="0.1524" layer="91"/>
 <label x="-241.3" y="187.96" size="0.8128" layer="95" font="vector"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="-259.08" y1="187.96" x2="-259.08" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="SD1" gate="G$1" pin="SCLK"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="P2"/>
@@ -4776,12 +4751,11 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </net>
 <net name="SD_DI" class="0">
 <segment>
-<pinref part="SD1" gate="G$1" pin="DI"/>
-<wire x1="-233.68" y1="185.42" x2="-261.62" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="185.42" x2="-264.16" y2="185.42" width="0.1524" layer="91"/>
 <label x="-241.3" y="185.42" size="0.8128" layer="95" font="vector"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="-261.62" y1="185.42" x2="-264.16" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="-264.16" y1="185.42" x2="-264.16" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="SD1" gate="G$1" pin="DI"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="P1"/>
@@ -4985,11 +4959,11 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </net>
 <net name="SD_CS" class="0">
 <segment>
-<pinref part="SD1" gate="G$1" pin="CS"/>
 <wire x1="-233.68" y1="182.88" x2="-269.24" y2="182.88" width="0.1524" layer="91"/>
 <label x="-241.3" y="182.88" size="0.8128" layer="95" font="vector"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="-269.24" y1="208.28" x2="-269.24" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="SD1" gate="G$1" pin="CS"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="P0"/>
@@ -5016,29 +4990,29 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </net>
 <net name="IRQ" class="0">
 <segment>
-<pinref part="SD1" gate="G$1" pin="IRQ"/>
 <wire x1="-233.68" y1="193.04" x2="-248.92" y2="193.04" width="0.1524" layer="91"/>
 <label x="-241.3" y="193.04" size="0.8128" layer="95" font="vector"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="-248.92" y1="193.04" x2="-248.92" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="SD1" gate="G$1" pin="IRQ"/>
 </segment>
 </net>
 <net name="RW" class="0">
 <segment>
-<pinref part="SD1" gate="G$1" pin="RW"/>
 <wire x1="-233.68" y1="180.34" x2="-274.32" y2="180.34" width="0.1524" layer="91"/>
 <label x="-241.3" y="180.34" size="0.8128" layer="95" font="vector"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="-274.32" y1="180.34" x2="-274.32" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="SD1" gate="G$1" pin="RW"/>
 </segment>
 </net>
 <net name="SD_DO" class="0">
 <segment>
-<pinref part="SD1" gate="G$1" pin="D0"/>
 <wire x1="-233.68" y1="190.5" x2="-254" y2="190.5" width="0.1524" layer="91"/>
 <label x="-241.3" y="190.5" size="0.8128" layer="95" font="vector"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="-254" y1="208.28" x2="-254" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="SD1" gate="G$1" pin="D0"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="P3"/>
