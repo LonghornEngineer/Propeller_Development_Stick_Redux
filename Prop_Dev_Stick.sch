@@ -2593,116 +2593,6 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="PP_FreqCtrl">
-<packages>
-<package name="7MM_X_5MM">
-<smd name="3" x="3.15" y="1.27" dx="1.4" dy="2.2" layer="1" rot="R90"/>
-<smd name="2" x="-3.15" y="1.27" dx="2.2" dy="1.4" layer="1" rot="R180"/>
-<smd name="1" x="-3.15" y="-1.27" dx="2.2" dy="1.4" layer="1" rot="R180"/>
-<smd name="4" x="3.05" y="-1.27" dx="1.4" dy="2.4" layer="1" rot="R90"/>
-<wire x1="-4.5" y1="2.5" x2="-4.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="-2.5" x2="4.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="4.5" y1="-2.5" x2="4.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="4.5" y1="2.5" x2="-4.5" y2="2.5" width="0.127" layer="21"/>
-<text x="-4.5" y="3" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-</package>
-<package name="HC-49/US_SM">
-<smd name="P$1" x="-4.25" y="0" dx="5.5" dy="1.5" layer="1"/>
-<smd name="P$2" x="4.25" y="0" dx="5.5" dy="1.5" layer="1"/>
-<wire x1="-5.55" y1="2.5" x2="-5.55" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-5.55" y1="-2.5" x2="5.55" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="5.55" y1="-2.5" x2="5.55" y2="2.5" width="0.127" layer="21"/>
-<wire x1="5.55" y1="2.5" x2="-5.55" y2="2.5" width="0.127" layer="21"/>
-<text x="-5.08" y="2.54" size="0.8128" layer="21" font="vector">&gt;NAME</text>
-</package>
-<package name="HC-49/US_PTH">
-<pad name="P$1" x="-2.4" y="0" drill="1.2" shape="long" rot="R90"/>
-<pad name="P$2" x="2.4" y="0" drill="1.2" shape="long" rot="R90"/>
-<wire x1="-5.675" y1="2.325" x2="5.675" y2="2.325" width="0.127" layer="21"/>
-<wire x1="5.675" y1="2.325" x2="5.675" y2="-2.325" width="0.127" layer="21"/>
-<wire x1="5.675" y1="-2.325" x2="-5.675" y2="-2.325" width="0.127" layer="21"/>
-<wire x1="-5.675" y1="-2.325" x2="-5.675" y2="2.325" width="0.127" layer="21"/>
-<text x="-5.08" y="2.54" size="0.8128" layer="21" font="vector">&gt;NAME</text>
-</package>
-<package name="8MM_X_3.8MM">
-<smd name="4" x="-2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
-<smd name="3" x="2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
-<smd name="2" x="2.75" y="-1.6" dx="1.3" dy="1.9" layer="1"/>
-<smd name="1" x="-2.75" y="-1.6" dx="1.3" dy="1.9" layer="1"/>
-<wire x1="-4" y1="1.9" x2="-4" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="4" y1="1.9" x2="4" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-1.9" x2="-1.5" y2="-1.9" width="0.127" layer="21"/>
-<text x="-4" y="3" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<wire x1="-1.5" y1="1.9" x2="1.5" y2="1.9" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="1.9" x2="-1.5" y2="-1.9" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="CRYSTAL">
-<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
-<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="-1.27" y="1.27"/>
-<vertex x="-1.27" y="-1.27"/>
-<vertex x="1.27" y="-1.27"/>
-<vertex x="1.27" y="1.27"/>
-</polygon>
-<text x="-5.08" y="5.08" size="0.8128" layer="95" font="vector">&gt;NAME</text>
-<text x="-5.08" y="2.54" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CRYSTAL" prefix="X" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="7MM_X_5MM" package="7MM_X_5MM">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="HC-49" package="HC-49/US_SM">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="HC-49/US_PTH" package="HC-49/US_PTH">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="8MM_X_3.8MM" package="8MM_X_3.8MM">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="PP_Passives">
 <packages>
 <package name="0402">
@@ -3134,150 +3024,6 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="PP_Electromechanical">
-<packages>
-<package name="EVQPF_TACT">
-<pad name="P$1" x="-3.5" y="1.27" drill="1.3"/>
-<pad name="P$2" x="3.5" y="1.27" drill="1.3"/>
-<pad name="B" x="2.25" y="-1.23" drill="1" shape="long"/>
-<pad name="A" x="-2.25" y="-1.23" drill="1" shape="long"/>
-<wire x1="-4.8" y1="2.87" x2="4.8" y2="2.87" width="0.127" layer="21"/>
-<wire x1="-4.8" y1="2.87" x2="-4.8" y2="-4.73" width="0.127" layer="21"/>
-<wire x1="-4.8" y1="-4.73" x2="4.8" y2="-4.73" width="0.127" layer="21"/>
-<wire x1="4.8" y1="-4.73" x2="4.8" y2="2.87" width="0.127" layer="21"/>
-<text x="-4.8" y="3.27" size="0.8128" layer="21" font="vector">&gt;NAME</text>
-<wire x1="0" y1="-1.33" x2="0" y2="-9.33" width="0.127" layer="21"/>
-</package>
-<package name="CB315FP">
-<smd name="3" x="2" y="4.45" dx="1.4" dy="1.7" layer="1" rot="R180"/>
-<smd name="1" x="-2" y="4.45" dx="1.4" dy="1.7" layer="1" rot="R180"/>
-<smd name="2" x="-2" y="-4.45" dx="1.4" dy="1.7" layer="1" rot="R180"/>
-<smd name="4" x="2" y="-4.45" dx="1.4" dy="1.7" layer="1" rot="R180"/>
-<wire x1="3.1" y1="-3.1" x2="3.1" y2="3.1" width="0.127" layer="21"/>
-<wire x1="-3.1" y1="-3.1" x2="-3.1" y2="3.1" width="0.127" layer="21"/>
-<wire x1="-3.1" y1="3.1" x2="3.1" y2="3.1" width="0.127" layer="21"/>
-<wire x1="-3.1" y1="-3.1" x2="3.1" y2="-3.1" width="0.127" layer="21"/>
-<text x="-3.81" y="-2.54" size="0.8128" layer="25" font="vector" rot="R90">&gt;NAME</text>
-</package>
-<package name="B3FS-1000">
-<smd name="3" x="4" y="2.25" dx="1.4" dy="1.6" layer="1" rot="R90"/>
-<smd name="4" x="-4" y="2.25" dx="1.4" dy="1.6" layer="1" rot="R90"/>
-<smd name="2" x="-4" y="-2.25" dx="1.4" dy="1.6" layer="1" rot="R90"/>
-<smd name="1" x="4" y="-2.25" dx="1.4" dy="1.6" layer="1" rot="R90"/>
-<wire x1="-3.15" y1="-3.15" x2="3.15" y2="-3.15" width="0.127" layer="21"/>
-<wire x1="-3.15" y1="3.15" x2="3.15" y2="3.15" width="0.127" layer="21"/>
-<wire x1="-3.15" y1="3.15" x2="-3.15" y2="-3.15" width="0.127" layer="21"/>
-<wire x1="3.15" y1="3.15" x2="3.15" y2="-3.15" width="0.127" layer="21"/>
-<text x="-2.54" y="3.81" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-</package>
-<package name="KSEM31JLFS">
-<smd name="4" x="2.9" y="2" dx="1" dy="2.8" layer="1" rot="R90"/>
-<smd name="2" x="2.9" y="-2" dx="1" dy="2.8" layer="1" rot="R90"/>
-<smd name="3" x="-2.9" y="2" dx="1" dy="2.8" layer="1" rot="R90"/>
-<smd name="1" x="-2.9" y="-2" dx="1" dy="2.8" layer="1" rot="R90"/>
-<wire x1="-3.1" y1="3.1" x2="3.1" y2="3.1" width="0.127" layer="21"/>
-<wire x1="-3.1" y1="-3.1" x2="3.1" y2="-3.1" width="0.127" layer="21"/>
-<wire x1="-3.1" y1="3.1" x2="-3.1" y2="-3.1" width="0.127" layer="21"/>
-<wire x1="3.1" y1="3.1" x2="3.1" y2="-3.1" width="0.127" layer="21"/>
-<text x="-3" y="3.5" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-</package>
-<package name="EVQ-Q2203W">
-<smd name="3" x="-3.4" y="2" dx="1" dy="3.2" layer="1" rot="R90"/>
-<smd name="1" x="-3.4" y="-2" dx="1" dy="3.2" layer="1" rot="R90"/>
-<smd name="4" x="3.4" y="2" dx="1" dy="3.2" layer="1" rot="R90"/>
-<smd name="2" x="3.4" y="-2" dx="1" dy="3.2" layer="1" rot="R90"/>
-<wire x1="3.25" y1="3" x2="3.25" y2="-3" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="3" x2="-3.25" y2="-3" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="3" x2="3.25" y2="3" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="-3" x2="3.25" y2="-3" width="0.127" layer="21"/>
-<text x="-3.2" y="3.2" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-</package>
-<package name="101-0134-EV">
-<smd name="1" x="-2.7" y="0" dx="2" dy="1.6" layer="1"/>
-<smd name="2" x="2.7" y="0" dx="2" dy="1.6" layer="1"/>
-<wire x1="-3" y1="1.75" x2="3" y2="1.75" width="0.127" layer="21"/>
-<wire x1="3" y1="1.75" x2="3" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="3" y1="-1.75" x2="-3" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="-3" y1="-1.75" x2="-3" y2="1.75" width="0.127" layer="21"/>
-<text x="-2.73" y="2.135" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="SPST">
-<pin name="A" x="-5.08" y="0" visible="off" length="short"/>
-<pin name="B" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="0.508" y2="1.778" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<text x="-5.08" y="5.08" size="0.8128" layer="95" font="vector">&gt;NAME</text>
-<text x="-5.08" y="2.54" size="0.8128" layer="95" font="vector">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SPST" prefix="SW" uservalue="yes">
-<description>SPST Switches</description>
-<gates>
-<gate name="G$1" symbol="SPST" x="0" y="0"/>
-</gates>
-<devices>
-<device name="EVQPF_TACT" package="EVQPF_TACT">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="B" pad="B"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="CB315FP" package="CB315FP">
-<connects>
-<connect gate="G$1" pin="A" pad="1 2"/>
-<connect gate="G$1" pin="B" pad="3 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="B3FS-1000" package="B3FS-1000">
-<connects>
-<connect gate="G$1" pin="A" pad="1 2"/>
-<connect gate="G$1" pin="B" pad="3 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="KSEM31JLFS" package="KSEM31JLFS">
-<connects>
-<connect gate="G$1" pin="A" pad="1 2"/>
-<connect gate="G$1" pin="B" pad="3 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="EVQ-Q2203W" package="EVQ-Q2203W">
-<connects>
-<connect gate="G$1" pin="A" pad="1 2"/>
-<connect gate="G$1" pin="B" pad="3 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="101-0134-EV" package="101-0134-EV">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="B" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4081,6 +3827,187 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </deviceset>
 </devicesets>
 </library>
+<library name="MF_Frequency_Control">
+<packages>
+<package name="5MMX3.2MM">
+<description>&lt;b&gt;Description:&lt;/b&gt; Footprint for 5MM x 3.2MM Crystals.&lt;br/&gt;</description>
+<smd name="P$1" x="-1.85" y="-1.1" dx="2" dy="1.2" layer="1"/>
+<smd name="P$2" x="1.85" y="-1.1" dx="2" dy="1.2" layer="1"/>
+<smd name="P$3" x="1.85" y="1.1" dx="2" dy="1.2" layer="1"/>
+<smd name="P$4" x="-1.85" y="1.1" dx="2" dy="1.2" layer="1"/>
+<wire x1="-0.6" y1="1.6" x2="0.6" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2.5" y1="0.2" x2="2.5" y2="-0.2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="0.2" x2="-2.5" y2="-0.2" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-1.6" x2="0.6" y2="-1.6" width="0.127" layer="21"/>
+<text x="-2.8" y="2.2" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+</package>
+<package name="7MMX5MM">
+<description>&lt;b&gt;Description:&lt;/b&gt; Footprint for 7MM x 5MM Crystals.&lt;br/&gt;</description>
+<smd name="P$1" x="-3.15" y="-1.27" dx="2.2" dy="1.4" layer="1"/>
+<smd name="P$2" x="-3.15" y="1.27" dx="2.2" dy="1.4" layer="1"/>
+<smd name="P$3" x="3.15" y="1.27" dx="2.2" dy="1.4" layer="1"/>
+<smd name="P$4" x="3.05" y="-1.27" dx="2.4" dy="1.4" layer="1"/>
+<wire x1="-3.6" y1="2.6" x2="3.6" y2="2.6" width="0.127" layer="21"/>
+<wire x1="3.6" y1="2.6" x2="3.6" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-3.6" y1="2.6" x2="-3.6" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-3.6" y1="-2.2" x2="-3.6" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-3.6" y1="-2.6" x2="3.6" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="3.6" y1="-2.6" x2="3.6" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="3.6" y1="0.2" x2="3.6" y2="-0.2" width="0.127" layer="21"/>
+<wire x1="-3.6" y1="0.2" x2="-3.6" y2="-0.2" width="0.127" layer="21"/>
+<text x="-3.6" y="3" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CRYSTAL_GND">
+<description>&lt;b&gt;Description:&lt;/b&gt; Symbol for Crystals that need a ground.&lt;br/&gt;</description>
+<pin name="X0" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="X1" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="GND" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<wire x1="-2.54" y1="1.524" x2="-2.54" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.524" x2="2.54" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="1.524" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-1.524" x2="2.032" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-1.524" x2="2.032" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="1.524" x2="-2.032" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="-1.016" x2="-3.048" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="-2.286" x2="0" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.286" x2="3.048" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="-2.286" x2="3.048" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-2.286" width="0.1524" layer="94"/>
+<text x="-5.08" y="5.08" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="2.54" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="XTL" prefix="X" uservalue="yes">
+<description>&lt;b&gt;Library:&lt;/b&gt;  MF_Frequency_Control&lt;br/&gt;
+&lt;b&gt;Description:&lt;/b&gt; Device for Cyrstal Oscillators. Manufacture part number (MFG#) can be added via Attributes.&lt;br/&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL_GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_5MMX3.2MM" package="5MMX3.2MM">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2 P$4"/>
+<connect gate="G$1" pin="X0" pad="P$1"/>
+<connect gate="G$1" pin="X1" pad="P$3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG#" value="N/A" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_7MMX5MM" package="7MMX5MM">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2 P$4"/>
+<connect gate="G$1" pin="X0" pad="P$1"/>
+<connect gate="G$1" pin="X1" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="MF_Switches">
+<packages>
+<package name="TACT6MM">
+<description>&lt;b&gt;Description:&lt;/b&gt; Standard 6MM Tact Switch Package.&lt;br/&gt;</description>
+<smd name="P$1" x="-2.425" y="2.25" dx="1.55" dy="1.3" layer="1"/>
+<smd name="P$2" x="2.425" y="2.25" dx="1.55" dy="1.3" layer="1"/>
+<smd name="P$3" x="2.425" y="-2.25" dx="1.55" dy="1.3" layer="1"/>
+<smd name="P$4" x="-2.425" y="-2.25" dx="1.55" dy="1.3" layer="1"/>
+<wire x1="-3.5" y1="3.2" x2="-3.5" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.2" x2="3.5" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.2" x2="3.5" y2="3.2" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.2" x2="-3.5" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="2.4" x2="0" y2="2.4" width="0.127" layer="21"/>
+<wire x1="0" y1="2.4" x2="1.4" y2="2.4" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="-2.4" x2="0" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.4" x2="1.4" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="0" y1="2.4" x2="0" y2="1" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.4" x2="0" y2="-1" width="0.127" layer="21"/>
+<wire x1="0" y1="-1" x2="-0.8" y2="0.8" width="0.127" layer="21"/>
+<text x="-3.5" y="3.6" size="0.8128" layer="21" font="vector" ratio="16">&gt;NAME</text>
+</package>
+<package name="TACT4.2MM">
+<description>&lt;b&gt;Description:&lt;/b&gt; Standard 4.2MM Tact Switch Package.Based off C&amp;K PTS 810 Series Tact Switch.&lt;br/&gt;</description>
+<smd name="P$3" x="-2.075" y="-1.075" dx="0.65" dy="1.05" layer="1" rot="R90"/>
+<smd name="P$4" x="2.075" y="-1.075" dx="0.65" dy="1.05" layer="1" rot="R90"/>
+<smd name="P$2" x="2.075" y="1.075" dx="0.65" dy="1.05" layer="1" rot="R90"/>
+<smd name="P$1" x="-2.075" y="1.075" dx="0.65" dy="1.05" layer="1" rot="R90"/>
+<wire x1="-2.8" y1="1.6" x2="2.8" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2.8" y1="1.6" x2="2.8" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="2.8" y1="-1.6" x2="-2.8" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2.8" y1="-1.6" x2="-2.8" y2="1.6" width="0.127" layer="21"/>
+<text x="-2.8" y="2" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<wire x1="-1.2" y1="1.2" x2="0" y2="1.2" width="0.127" layer="25"/>
+<wire x1="0" y1="1.2" x2="1.2" y2="1.2" width="0.127" layer="25"/>
+<wire x1="-1.2" y1="-1.2" x2="0" y2="-1.2" width="0.127" layer="25"/>
+<wire x1="0" y1="-1.2" x2="1.2" y2="-1.2" width="0.127" layer="25"/>
+<wire x1="0" y1="-1.2" x2="0" y2="-0.6" width="0.127" layer="25"/>
+<wire x1="0" y1="1.2" x2="0" y2="0.6" width="0.127" layer="25"/>
+<wire x1="0" y1="-0.6" x2="-0.4" y2="0.4" width="0.127" layer="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TACTSW">
+<description>&lt;b&gt;Description:&lt;/b&gt; Tact Switch Symbol.&lt;br/&gt;</description>
+<pin name="P$1" x="-5.08" y="2.54" visible="off" length="short"/>
+<pin name="P$2" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="P$3" x="-5.08" y="-2.54" visible="off" length="short"/>
+<pin name="P$4" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
+<text x="-5.08" y="7.62" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="5.08" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.016" y2="1.016" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TACT" prefix="SW" uservalue="yes">
+<description>&lt;b&gt;Library:&lt;/b&gt;  MF_Switches&lt;br/&gt;
+&lt;b&gt;Description:&lt;/b&gt; Device for Tact Switches. Manufacture part number (MFG#) can be added via Attributes.&lt;br/&gt;</description>
+<gates>
+<gate name="G$1" symbol="TACTSW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_6MM" package="TACT6MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG#" value="N/A" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_4.2MM" package="TACT4.2MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4097,7 +4024,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <attribute name="PNAME" value="Propeller Dev Stick"/>
 <attribute name="REVNUM" value="REV 4"/>
 </part>
-<part name="X1" library="PP_FreqCtrl" deviceset="CRYSTAL" device="HC-49" value="ATS060CSM-1"/>
 <part name="U2" library="PP_DigitalIC" deviceset="FT230X" device="QFN-16" value="FT230XQ-R"/>
 <part name="C1" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0603" value=".1uF"/>
 <part name="C2" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0603" value=".1uF"/>
@@ -4108,7 +4034,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="C5" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0603" value=".1uF"/>
 <part name="C6" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0603" value=".1uF"/>
 <part name="C7" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0603" value=".1uF"/>
-<part name="RESET" library="PP_Electromechanical" deviceset="SPST" device="101-0134-EV" value="101-0134-EV"/>
 <part name="U4" library="PP_DigitalIC" deviceset="CAT24M01XI-T2" device="SOIC-8_W" value="CAT24C512WI-GT3"/>
 <part name="R4" library="PP_Passives" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="R5" library="PP_Passives" deviceset="RESISTOR" device="0603" value="10K"/>
@@ -4149,6 +4074,8 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="R18" library="PP_Passives" deviceset="RESISTOR" device="0603" value="25K"/>
 <part name="SD1" library="MF_Connectors" deviceset="SD_CARD_SLOT" device="_MICRO_RIGHT" value="MF-CON-MICROSDSLOT-RIGHT"/>
 <part name="J1" library="MF_Connectors" deviceset="USB_CON_5P" device="RIGHT" value="MF-CON-MICROUSB-RIGHT"/>
+<part name="X1" library="MF_Frequency_Control" deviceset="XTL" device="_7MMX5MM" value="ABMM-6.000MHZ-B2-T"/>
+<part name="RESET" library="MF_Switches" deviceset="TACT" device="_4.2MM" value="MF-SW-TACT-4.2MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -4165,7 +4092,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <attribute name="PNAME" x="-144.78" y="147.32" size="1.778" layer="96" display="off"/>
 <attribute name="REVNUM" x="-144.78" y="147.32" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="X1" gate="G$1" x="-144.78" y="254"/>
 <instance part="U2" gate="G$1" x="-307.34" y="241.3"/>
 <instance part="C1" gate="G$1" x="-345.44" y="231.14"/>
 <instance part="C2" gate="G$1" x="-325.12" y="223.52"/>
@@ -4176,7 +4102,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <instance part="C5" gate="G$1" x="-160.02" y="182.88" rot="R180"/>
 <instance part="C6" gate="G$1" x="-152.4" y="182.88" rot="R180"/>
 <instance part="C7" gate="G$1" x="-281.94" y="243.84"/>
-<instance part="RESET" gate="G$1" x="-198.12" y="248.92"/>
 <instance part="U4" gate="G$1" x="-233.68" y="241.3" rot="MR0"/>
 <instance part="R4" gate="G$1" x="-254" y="254" rot="R90"/>
 <instance part="R5" gate="G$1" x="-261.62" y="254" rot="R90"/>
@@ -4215,8 +4140,16 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <instance part="U3" gate="G$1" x="-53.34" y="195.58"/>
 <instance part="R3" gate="G$1" x="-76.2" y="200.66" rot="R90"/>
 <instance part="R18" gate="G$1" x="-76.2" y="185.42" rot="R90"/>
-<instance part="SD1" gate="G$1" x="-223.52" y="190.5" rot="MR180"/>
+<instance part="SD1" gate="G$1" x="-231.14" y="177.8" rot="MR180"/>
 <instance part="J1" gate="G$1" x="-381" y="251.46"/>
+<instance part="X1" gate="G$1" x="-144.78" y="254" smashed="yes" rot="R180">
+<attribute name="NAME" x="-142.24" y="259.08" size="0.8128" layer="95" font="vector" align="top-left"/>
+<attribute name="VALUE" x="-142.24" y="256.54" size="0.8128" layer="96" font="vector"/>
+</instance>
+<instance part="RESET" gate="G$1" x="-198.12" y="246.38" smashed="yes">
+<attribute name="NAME" x="-203.2" y="254" size="0.8128" layer="95" font="vector" align="top-left"/>
+<attribute name="VALUE" x="-203.2" y="251.46" size="0.8128" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4229,8 +4162,14 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="BOE'"/>
-<wire x1="-177.8" y1="251.46" x2="-187.96" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="251.46" x2="-182.88" y2="251.46" width="0.1524" layer="91"/>
 <label x="-187.96" y="251.46" size="0.8128" layer="95" font="vector"/>
+<pinref part="X1" gate="G$1" pin="GND"/>
+<wire x1="-182.88" y1="251.46" x2="-187.96" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="-144.78" y1="259.08" x2="-144.78" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="-144.78" y1="261.62" x2="-182.88" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="-182.88" y1="261.62" x2="-182.88" y2="251.46" width="0.1524" layer="91"/>
+<junction x="-182.88" y="251.46"/>
 </segment>
 <segment>
 <wire x1="-373.38" y1="246.38" x2="-370.84" y2="246.38" width="0.1524" layer="91"/>
@@ -4281,9 +4220,16 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <junction x="-175.26" y="177.8"/>
 </segment>
 <segment>
-<pinref part="RESET" gate="G$1" pin="A"/>
-<wire x1="-203.2" y1="248.92" x2="-208.28" y2="248.92" width="0.1524" layer="91"/>
-<label x="-208.28" y="248.92" size="0.8128" layer="95" font="vector"/>
+<label x="-208.28" y="238.76" size="0.8128" layer="95" font="vector"/>
+<pinref part="RESET" gate="G$1" pin="P$3"/>
+<wire x1="-205.74" y1="238.76" x2="-205.74" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="-205.74" y1="243.84" x2="-203.2" y2="243.84" width="0.1524" layer="91"/>
+<pinref part="RESET" gate="G$1" pin="P$4"/>
+<wire x1="-193.04" y1="243.84" x2="-190.5" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="-190.5" y1="243.84" x2="-190.5" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="-190.5" y1="238.76" x2="-205.74" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="-205.74" y1="238.76" x2="-208.28" y2="238.76" width="0.1524" layer="91"/>
+<junction x="-205.74" y="238.76"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="GND"/>
@@ -4308,7 +4254,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="-269.24" y1="231.14" x2="-269.24" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-226.06" y1="215.9" x2="-238.76" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="203.2" x2="-238.76" y2="203.2" width="0.1524" layer="91"/>
 <label x="-238.76" y="203.2" size="0.8128" layer="95" font="vector"/>
 <pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="-238.76" y1="208.28" x2="-238.76" y2="203.2" width="0.1524" layer="91"/>
@@ -4560,11 +4506,11 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <pinref part="U1" gate="G$1" pin="RES'"/>
 <wire x1="-177.8" y1="248.92" x2="-190.5" y2="248.92" width="0.1524" layer="91"/>
 <label x="-187.96" y="248.92" size="0.8128" layer="95" font="vector"/>
-<pinref part="RESET" gate="G$1" pin="B"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="-190.5" y1="248.92" x2="-193.04" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="-190.5" y1="256.54" x2="-190.5" y2="248.92" width="0.1524" layer="91"/>
 <junction x="-190.5" y="248.92"/>
+<pinref part="RESET" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -4620,7 +4566,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="-254" y1="220.98" x2="-248.92" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="-248.92" y1="220.98" x2="-243.84" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="-243.84" y1="220.98" x2="-243.84" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="-243.84" y1="200.66" x2="-226.06" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-243.84" y1="200.66" x2="-233.68" y2="200.66" width="0.1524" layer="91"/>
 <label x="-238.76" y="200.66" size="0.8128" layer="95" font="vector"/>
 <label x="-274.32" y="220.98" size="0.8128" layer="95" font="vector"/>
 <pinref part="C16" gate="G$1" pin="1"/>
@@ -4701,7 +4647,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </net>
 <net name="SD_SCLK" class="0">
 <segment>
-<wire x1="-226.06" y1="200.66" x2="-259.08" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="187.96" x2="-259.08" y2="187.96" width="0.1524" layer="91"/>
 <label x="-241.3" y="187.96" size="0.8128" layer="95" font="vector"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="-259.08" y1="187.96" x2="-259.08" y2="208.28" width="0.1524" layer="91"/>
@@ -4720,7 +4666,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </net>
 <net name="SD_DI" class="0">
 <segment>
-<wire x1="-226.06" y1="198.12" x2="-264.16" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="185.42" x2="-264.16" y2="185.42" width="0.1524" layer="91"/>
 <label x="-241.3" y="185.42" size="0.8128" layer="95" font="vector"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="-264.16" y1="185.42" x2="-264.16" y2="208.28" width="0.1524" layer="91"/>
@@ -4802,9 +4748,9 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <pinref part="U1" gate="G$1" pin="X0"/>
 <wire x1="-154.94" y1="251.46" x2="-152.4" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="-152.4" y1="251.46" x2="-152.4" y2="254" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="P$1"/>
 <wire x1="-152.4" y1="254" x2="-149.86" y2="254" width="0.1524" layer="91"/>
 <label x="-152.4" y="254" size="0.8128" layer="95" font="vector"/>
+<pinref part="X1" gate="G$1" pin="X1"/>
 </segment>
 </net>
 <net name="X1" class="0">
@@ -4812,9 +4758,9 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <pinref part="U1" gate="G$1" pin="X1"/>
 <wire x1="-154.94" y1="248.92" x2="-137.16" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="-137.16" y1="248.92" x2="-137.16" y2="254" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="P$2"/>
 <wire x1="-137.16" y1="254" x2="-139.7" y2="254" width="0.1524" layer="91"/>
 <label x="-152.4" y="248.92" size="0.8128" layer="95" font="vector"/>
+<pinref part="X1" gate="G$1" pin="X0"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -4928,7 +4874,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </net>
 <net name="SD_CS" class="0">
 <segment>
-<wire x1="-226.06" y1="195.58" x2="-269.24" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="182.88" x2="-269.24" y2="182.88" width="0.1524" layer="91"/>
 <label x="-241.3" y="182.88" size="0.8128" layer="95" font="vector"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="-269.24" y1="208.28" x2="-269.24" y2="182.88" width="0.1524" layer="91"/>
@@ -4959,7 +4905,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </net>
 <net name="IRQ" class="0">
 <segment>
-<wire x1="-226.06" y1="205.74" x2="-248.92" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="193.04" x2="-248.92" y2="193.04" width="0.1524" layer="91"/>
 <label x="-241.3" y="193.04" size="0.8128" layer="95" font="vector"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="-248.92" y1="193.04" x2="-248.92" y2="208.28" width="0.1524" layer="91"/>
@@ -4968,7 +4914,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </net>
 <net name="RW" class="0">
 <segment>
-<wire x1="-226.06" y1="193.04" x2="-274.32" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="180.34" x2="-274.32" y2="180.34" width="0.1524" layer="91"/>
 <label x="-241.3" y="180.34" size="0.8128" layer="95" font="vector"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="-274.32" y1="180.34" x2="-274.32" y2="208.28" width="0.1524" layer="91"/>
@@ -4977,7 +4923,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </net>
 <net name="SD_DO" class="0">
 <segment>
-<wire x1="-226.06" y1="203.2" x2="-254" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="190.5" x2="-254" y2="190.5" width="0.1524" layer="91"/>
 <label x="-241.3" y="190.5" size="0.8128" layer="95" font="vector"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="-254" y1="208.28" x2="-254" y2="190.5" width="0.1524" layer="91"/>
