@@ -38,7 +38,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -171,6 +171,18 @@
 <text x="7.874" y="2.413" size="0.8128" layer="21" font="vector">GND</text>
 <text x="0.508" y="2.413" size="0.8128" layer="21" font="vector">VIN</text>
 <text x="2.159" y="22.352" size="0.8128" layer="21" font="vector" rot="R180">VIN</text>
+<polygon width="0.4064" layer="31">
+<vertex x="0.762" y="15.748" curve="90"/>
+<vertex x="1.397" y="15.113" curve="90"/>
+<vertex x="2.032" y="15.748" curve="90"/>
+<vertex x="1.397" y="16.383" curve="90"/>
+</polygon>
+<polygon width="0.4064" layer="31">
+<vertex x="0.762" y="9.144" curve="90"/>
+<vertex x="1.397" y="8.509" curve="90"/>
+<vertex x="2.032" y="9.144" curve="90"/>
+<vertex x="1.397" y="9.779" curve="90"/>
+</polygon>
 </plain>
 <libraries>
 <library name="PP_DigitalIC">
