@@ -4852,7 +4852,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="U$1" library="PP_Aesthetics" deviceset="LHE_FRAME" device="">
 <attribute name="DNAME" value="Parker Dillmann"/>
 <attribute name="PNAME" value="Propeller Dev Stick"/>
-<attribute name="REVNUM" value="REV 4"/>
+<attribute name="REVNUM" value="REV 4B"/>
 </part>
 <part name="U2" library="PP_DigitalIC" deviceset="FT230X" device="Q" value="FT230XQ-R"/>
 <part name="C1" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0603" value=".1uF"/>
