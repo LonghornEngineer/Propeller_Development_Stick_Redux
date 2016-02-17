@@ -84,6 +84,9 @@
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="128bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="129" name="129bmp" color="2" fill="4" visible="yes" active="yes"/>
+<layer number="130" name="130bmp" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="prix" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="test" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
@@ -335,7 +338,7 @@
 <library name="PP_Aesthetics">
 <packages>
 <package name="LHE_FRAME">
-<text x="0" y="5.08" size="0.8128" layer="21" font="vector" ratio="16">(c) 2015 Longhorn Engineer</text>
+<text x="0" y="5.08" size="0.8128" layer="21" font="vector" ratio="16">(c) 2016 Longhorn Engineer</text>
 <text x="0" y="3.81" size="0.8128" layer="21" font="vector" ratio="16">longhornengineer.com</text>
 <text x="0" y="2.54" size="0.8128" layer="21" font="vector" ratio="16">&gt;DRAWING_NAME</text>
 <text x="0" y="1.27" size="0.8128" layer="21" font="vector" ratio="16">&gt;REVNUM</text>
@@ -915,19 +918,6 @@
 </library>
 <library name="PP_Connectors">
 <packages>
-<package name="10118193-0001LF">
-<smd name="3" x="0" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
-<smd name="4" x="0.65" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
-<smd name="2" x="-0.65" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
-<smd name="1" x="-1.3" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
-<smd name="5" x="1.3" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
-<smd name="S3" x="-3.2" y="2.54" dx="1.4" dy="1.6" layer="1" rot="R90"/>
-<smd name="S4" x="3.2" y="2.54" dx="1.4" dy="1.6" layer="1" rot="R90"/>
-<pad name="S2" x="3.3" y="-0.135" drill="0.9" shape="long" rot="R180"/>
-<pad name="S1" x="-3.3" y="-0.135" drill="0.9" shape="long" rot="R180"/>
-<wire x1="-4.125" y1="-1.585" x2="4.125" y2="-1.585" width="0.127" layer="21"/>
-<text x="-4" y="3.54" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
-</package>
 <package name="2.54MM_01X04_PIN_HEADER">
 <pad name="1" x="-3.81" y="0" drill="0.8" rot="R90"/>
 <pad name="2" x="-1.27" y="0" drill="0.8" rot="R90"/>
@@ -1152,6 +1142,41 @@
 <text x="6.47375" y="9.225" size="0.6096" layer="51" font="vector" ratio="16">Card Lock Position</text>
 <text x="6.47375" y="8.225" size="0.6096" layer="51" font="vector" ratio="16">Card Push In</text>
 <wire x1="0.4" y1="-7.625" x2="3.72375" y2="-7.625" width="0.127" layer="21"/>
+</package>
+<package name="MICROUSB-RIGHT">
+<description>&lt;b&gt;Description:&lt;/b&gt; Package for Micro USB Type B connector. Based on FCI 10118193-0001LF.&lt;br&gt;</description>
+<smd name="3" x="0" y="1.27" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="4" x="0.65" y="1.27" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="2" x="-0.65" y="1.27" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="1" x="-1.3" y="1.27" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="5" x="1.3" y="1.27" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="S3" x="-3.2" y="1.27" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="S4" x="3.2" y="1.27" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+<text x="-5.08" y="2.7" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<wire x1="-5.08" y1="-2.855" x2="5.08" y2="-2.855" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.855" x2="-5.08" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="1.3" x2="-4.08" y2="2.3" width="0.127" layer="21"/>
+<wire x1="-4.08" y1="2.3" x2="4.08" y2="2.3" width="0.127" layer="21"/>
+<wire x1="4.08" y1="2.3" x2="5.08" y2="1.3" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.3" x2="5.08" y2="-2.855" width="0.127" layer="21"/>
+<smd name="S5" x="-1.2" y="-1.405" dx="1.9" dy="1.9" layer="1"/>
+<smd name="S6" x="1.2" y="-1.405" dx="1.9" dy="1.9" layer="1"/>
+<smd name="S1" x="-3.3" y="-1.4" dx="0.9" dy="1.6" layer="1" roundness="100" rot="R180"/>
+<smd name="S2" x="3.3" y="-1.4" dx="0.9" dy="1.6" layer="1" roundness="100" rot="R180"/>
+<wire x1="-3.55" y1="-1.05" x2="-3.55" y2="-1.75" width="0.01" layer="20"/>
+<wire x1="-3.55" y1="-1.75" x2="-3.3" y2="-2" width="0.01" layer="20" curve="90"/>
+<wire x1="-3.3" y1="-2" x2="-3.05" y2="-1.75" width="0.01" layer="20" curve="90"/>
+<wire x1="-3.05" y1="-1.75" x2="-3.05" y2="-1.05" width="0.01" layer="20"/>
+<wire x1="-3.05" y1="-1.05" x2="-3.3" y2="-0.8" width="0.01" layer="20" curve="90"/>
+<wire x1="-3.3" y1="-0.8" x2="-3.55" y2="-1.05" width="0.01" layer="20" curve="90"/>
+<wire x1="3.05" y1="-1.05" x2="3.05" y2="-1.75" width="0.01" layer="20"/>
+<wire x1="3.05" y1="-1.75" x2="3.3" y2="-2" width="0.01" layer="20" curve="90"/>
+<wire x1="3.3" y1="-2" x2="3.55" y2="-1.75" width="0.01" layer="20" curve="90"/>
+<wire x1="3.55" y1="-1.75" x2="3.55" y2="-1.05" width="0.01" layer="20"/>
+<wire x1="3.55" y1="-1.05" x2="3.3" y2="-0.8" width="0.01" layer="20" curve="90"/>
+<wire x1="3.3" y1="-0.8" x2="3.05" y2="-1.05" width="0.01" layer="20" curve="90"/>
+<smd name="S7" x="-3.3" y="-1.4" dx="0.9" dy="1.6" layer="16" roundness="100" rot="R180" cream="no"/>
+<smd name="S8" x="3.3" y="-1.4" dx="0.9" dy="1.6" layer="16" roundness="100" rot="R180" cream="no"/>
 </package>
 </packages>
 </library>
@@ -1593,9 +1618,6 @@ design rules under a new name.</description>
 <element name="SD1" library="MF_Connectors" package="MICROSDSLOT-RIGHT" value="MF-CON-MICROSDSLOT-RIGHT" x="54.864" y="12.446" smashed="yes" rot="R270">
 <attribute name="NAME" x="47.25225" y="19.807" size="0.8128" layer="21" font="vector"/>
 </element>
-<element name="J1" library="PP_Connectors" package="10118193-0001LF" value="MF-CON-MICROUSB-RIGHT" x="1.524" y="12.446" smashed="yes" rot="R270">
-<attribute name="NAME" x="0.635" y="17.686" size="0.8128" layer="25" font="vector"/>
-</element>
 <element name="X1" library="MF_Frequency_Control" package="7MMX5MM" value="ABMM-6.000MHZ-B2-T" x="28.829" y="18.923" smashed="yes" rot="MR0">
 <attribute name="NAME" x="32.429" y="21.923" size="0.8128" layer="26" font="vector" rot="MR0"/>
 </element>
@@ -1633,14 +1655,12 @@ design rules under a new name.</description>
 <attribute name="LABEL03" value="" x="59.436" y="-1.524" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right"/>
 <attribute name="LABEL04" value="" x="61.976" y="-1.524" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right"/>
 <attribute name="LABEL01" value="" x="54.356" y="-1.524" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right"/>
-<attribute name="NAME" x="51.562" y="1.8415" size="0.8128" layer="21" font="vector" ratio="16"/>
 </element>
 <element name="J3" library="PP_Connectors" package="2.54MM_01X04_PIN_HEADER" value="" x="58.166" y="23.876" smashed="yes">
 <attribute name="LABEL02" value="" x="56.896" y="21.336" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right"/>
 <attribute name="LABEL03" value="" x="59.436" y="21.336" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right"/>
 <attribute name="LABEL04" value="" x="61.976" y="21.336" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right"/>
 <attribute name="LABEL01" value="" x="54.356" y="21.336" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right"/>
-<attribute name="NAME" x="51.308" y="22.4155" size="0.8128" layer="21" font="vector" ratio="16"/>
 </element>
 <element name="J4" library="PP_Connectors" package="2.54MM_01X20_PIN_HEADER" value="M20-7822046" x="25.146" y="1.016" smashed="yes">
 <attribute name="LABEL03" value="" x="6.096" y="-1.524" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left"/>
@@ -1663,7 +1683,6 @@ design rules under a new name.</description>
 <attribute name="LABEL20" value="" x="49.276" y="-1.524" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left"/>
 <attribute name="LABEL01" value="" x="1.016" y="-1.524" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right"/>
 <attribute name="LABEL02" value="" x="3.556" y="-1.524" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right"/>
-<attribute name="NAME" x="39.624" y="3.3655" size="0.8128" layer="21" font="vector" ratio="16"/>
 </element>
 <element name="J5" library="PP_Connectors" package="2.54MM_01X20_PIN_HEADER" value="M20-7822046" x="25.146" y="23.876" smashed="yes">
 <attribute name="LABEL03" value="" x="6.096" y="21.336" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left"/>
@@ -1686,7 +1705,9 @@ design rules under a new name.</description>
 <attribute name="LABEL20" value="" x="49.276" y="21.336" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left"/>
 <attribute name="LABEL01" value="" x="1.016" y="21.336" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right"/>
 <attribute name="LABEL02" value="" x="3.556" y="21.336" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right"/>
-<attribute name="NAME" x="22.606" y="20.3835" size="0.8128" layer="21" font="vector" ratio="16"/>
+</element>
+<element name="J1" library="MF_Connectors" package="MICROUSB-RIGHT" value="MF-CON-MICROUSB-RIGHT" x="2.794" y="12.446" smashed="yes" rot="R270">
+<attribute name="NAME" x="0.67" y="17.686" size="0.8128" layer="25" font="vector"/>
 </element>
 </elements>
 <signals>
@@ -1749,12 +1770,6 @@ design rules under a new name.</description>
 <via x="48.387" y="10.414" extent="1-16" drill="0.5"/>
 <via x="52.07" y="7.112" extent="1-16" drill="0.5"/>
 <via x="52.07" y="5.588" extent="1-16" drill="0.5"/>
-<contactref element="J1" pad="5"/>
-<contactref element="J1" pad="5"/>
-<contactref element="J1" pad="S1"/>
-<contactref element="J1" pad="S4"/>
-<contactref element="J1" pad="S3"/>
-<contactref element="J1" pad="S2"/>
 <via x="18.288" y="14.478" extent="1-16" drill="0.5"/>
 <via x="23.622" y="18.034" extent="1-16" drill="0.5"/>
 <via x="28.194" y="13.716" extent="1-16" drill="0.5"/>
@@ -1802,6 +1817,23 @@ design rules under a new name.</description>
 <contactref element="J3" pad="1"/>
 <contactref element="J4" pad="4"/>
 <contactref element="J5" pad="4"/>
+<contactref element="J1" pad="5"/>
+<contactref element="J1" pad="S1"/>
+<contactref element="J1" pad="S3"/>
+<contactref element="J1" pad="S5"/>
+<contactref element="J1" pad="S2"/>
+<contactref element="J1" pad="S4"/>
+<contactref element="J1" pad="S6"/>
+<wire x1="1.389" y1="13.646" x2="1.27" y2="13.646" width="0.6096" layer="1"/>
+<wire x1="1.27" y1="13.646" x2="1.27" y2="15.746" width="0.6096" layer="1"/>
+<wire x1="1.27" y1="15.746" x2="1.27" y2="17.018" width="0.6096" layer="1"/>
+<wire x1="1.389" y1="11.246" x2="1.27" y2="11.246" width="0.6096" layer="1"/>
+<wire x1="1.27" y1="11.246" x2="1.27" y2="9.146" width="0.6096" layer="1"/>
+<wire x1="1.27" y1="7.874" x2="1.394" y2="7.874" width="0.6096" layer="1"/>
+<wire x1="1.394" y1="7.874" x2="1.394" y2="9.146" width="0.6096" layer="1"/>
+<wire x1="1.394" y1="15.746" x2="1.27" y2="15.746" width="0.6096" layer="1"/>
+<wire x1="1.394" y1="9.146" x2="1.27" y2="9.146" width="0.6096" layer="1"/>
+<wire x1="1.27" y1="9.146" x2="1.27" y2="7.874" width="0.6096" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="R5" pad="1"/>
@@ -2251,16 +2283,16 @@ design rules under a new name.</description>
 </signal>
 <signal name="VBUS">
 <contactref element="L1" pad="1"/>
-<contactref element="J1" pad="1"/>
-<wire x1="4.064" y1="13.746" x2="4.856" y2="13.746" width="0.254" layer="1"/>
 <wire x1="4.856" y1="13.746" x2="5.969" y2="14.859" width="0.254" layer="1"/>
 <wire x1="5.969" y1="14.859" x2="6.008" y2="14.859" width="0.254" layer="1"/>
+<contactref element="J1" pad="1"/>
+<wire x1="4.856" y1="13.746" x2="4.064" y2="13.746" width="0.254" layer="1"/>
 </signal>
 <signal name="D+">
 <contactref element="R12" pad="2"/>
 <wire x1="5.246" y1="12.446" x2="6.008" y2="11.684" width="0.254" layer="1"/>
 <contactref element="J1" pad="3"/>
-<wire x1="4.064" y1="12.446" x2="5.246" y2="12.446" width="0.254" layer="1"/>
+<wire x1="5.246" y1="12.446" x2="4.064" y2="12.446" width="0.254" layer="1"/>
 </signal>
 <signal name="RX">
 <contactref element="U2" pad="2"/>
@@ -2491,9 +2523,9 @@ design rules under a new name.</description>
 <signal name="D-">
 <contactref element="R13" pad="2"/>
 <wire x1="6.008" y1="12.969" x2="6.008" y2="13.208" width="0.254" layer="1"/>
-<contactref element="J1" pad="2"/>
-<wire x1="4.064" y1="13.096" x2="5.896" y2="13.096" width="0.254" layer="1"/>
 <wire x1="5.896" y1="13.096" x2="6.008" y2="13.208" width="0.254" layer="1"/>
+<contactref element="J1" pad="2"/>
+<wire x1="5.896" y1="13.096" x2="4.064" y2="13.096" width="0.254" layer="1"/>
 </signal>
 <signal name="5V">
 <contactref element="C10" pad="1"/>

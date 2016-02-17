@@ -84,6 +84,9 @@
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="128bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="129" name="129bmp" color="2" fill="4" visible="yes" active="yes"/>
+<layer number="130" name="130bmp" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="prix" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="test" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
@@ -934,7 +937,7 @@
 <library name="PP_Aesthetics">
 <packages>
 <package name="LHE_FRAME">
-<text x="0" y="5.08" size="0.8128" layer="21" font="vector" ratio="16">(c) 2015 Longhorn Engineer</text>
+<text x="0" y="5.08" size="0.8128" layer="21" font="vector" ratio="16">(c) 2016 Longhorn Engineer</text>
 <text x="0" y="3.81" size="0.8128" layer="21" font="vector" ratio="16">longhornengineer.com</text>
 <text x="0" y="2.54" size="0.8128" layer="21" font="vector" ratio="16">&gt;DRAWING_NAME</text>
 <text x="0" y="1.27" size="0.8128" layer="21" font="vector" ratio="16">&gt;REVNUM</text>
@@ -2843,6 +2846,24 @@
 <wire x1="2.54" y1="-1.524" x2="-2.54" y2="-1.524" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-1.524" x2="-2.54" y2="1.524" width="0.127" layer="21"/>
 </package>
+<package name="0201">
+<wire x1="-0.6" y1="0.3" x2="0.6" y2="0.3" width="0.0508" layer="21"/>
+<wire x1="0.6" y1="0.3" x2="0.6" y2="-0.3" width="0.0508" layer="21"/>
+<wire x1="0.6" y1="-0.3" x2="-0.6" y2="-0.3" width="0.0508" layer="21"/>
+<wire x1="-0.6" y1="-0.3" x2="-0.6" y2="0.3" width="0.0508" layer="21"/>
+<smd name="1" x="-0.325" y="0" dx="0.25" dy="0.35" layer="1"/>
+<smd name="2" x="0.325" y="0" dx="0.25" dy="0.35" layer="1"/>
+<text x="-1.27" y="0.6985" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+</package>
+<package name="01005">
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.0508" layer="21"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.0508" layer="21"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.0508" layer="21"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.0508" layer="21"/>
+<smd name="1" x="-0.2375" y="0" dx="0.25" dy="0.275" layer="1"/>
+<smd name="2" x="0.2375" y="0" dx="0.25" dy="0.275" layer="1"/>
+<text x="-1.27" y="0.6985" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR_NON_POLAR">
@@ -2944,6 +2965,15 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="_0201" package="0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="RESISTOR" prefix="R" uservalue="yes">
@@ -2998,6 +3028,24 @@
 </technologies>
 </device>
 <device name="_2512" package="2512">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0201" package="0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_01005" package="01005">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -3110,71 +3158,6 @@
 </library>
 <library name="PP_Connectors">
 <packages>
-<package name="10118193-0001LF">
-<smd name="3" x="0" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
-<smd name="4" x="0.65" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
-<smd name="2" x="-0.65" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
-<smd name="1" x="-1.3" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
-<smd name="5" x="1.3" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
-<smd name="S3" x="-3.2" y="2.54" dx="1.4" dy="1.6" layer="1" rot="R90"/>
-<smd name="S4" x="3.2" y="2.54" dx="1.4" dy="1.6" layer="1" rot="R90"/>
-<pad name="S2" x="3.3" y="-0.135" drill="0.9" shape="long" rot="R180"/>
-<pad name="S1" x="-3.3" y="-0.135" drill="0.9" shape="long" rot="R180"/>
-<wire x1="-4.125" y1="-1.585" x2="4.125" y2="-1.585" width="0.127" layer="21"/>
-<text x="-4" y="3.54" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
-</package>
-<package name="500075-1517">
-<pad name="D+" x="0" y="-1.3" drill="0.7"/>
-<pad name="ID" x="0.8" y="1.3" drill="0.7"/>
-<pad name="GND" x="1.6" y="-1.3" drill="0.7"/>
-<pad name="D-" x="-0.8" y="1.3" drill="0.7"/>
-<pad name="5V" x="-1.6" y="-1.3" drill="0.7"/>
-<wire x1="-3.325" y1="-0.875" x2="-3.325" y2="0.875" width="0.127" layer="46"/>
-<wire x1="-3.325" y1="0.875" x2="-3.975" y2="0.875" width="0.127" layer="46" curve="180"/>
-<wire x1="-3.975" y1="-0.875" x2="-3.975" y2="0.875" width="0.127" layer="46"/>
-<wire x1="-3.325" y1="-0.875" x2="-3.975" y2="-0.875" width="0.127" layer="46" curve="-180"/>
-<wire x1="3.975" y1="-0.875" x2="3.975" y2="0.875" width="0.127" layer="46"/>
-<wire x1="3.975" y1="0.875" x2="3.325" y2="0.875" width="0.127" layer="46" curve="180"/>
-<wire x1="3.325" y1="-0.875" x2="3.325" y2="0.875" width="0.127" layer="46"/>
-<wire x1="3.975" y1="-0.875" x2="3.325" y2="-0.875" width="0.127" layer="46" curve="-180"/>
-<smd name="P$1" x="-3.65" y="0" dx="3.9" dy="1.4" layer="1" roundness="100" rot="R90" cream="no"/>
-<smd name="P$2" x="3.65" y="0" dx="3.9" dy="1.4" layer="1" roundness="100" rot="R90" cream="no"/>
-<smd name="P$3" x="-3.65" y="0" dx="3.9" dy="1.4" layer="16" roundness="100" rot="R90" cream="no"/>
-<smd name="P$4" x="3.65" y="0" dx="3.9" dy="1.4" layer="16" roundness="100" rot="R90" cream="no"/>
-<wire x1="-3.85" y1="2.4" x2="3.85" y2="2.4" width="0.127" layer="21"/>
-<wire x1="-3.85" y1="-2.3" x2="3.85" y2="-2.3" width="0.127" layer="21"/>
-<text x="-4" y="3" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
-<hole x="-3.65" y="0" drill="0.6"/>
-<hole x="-3.65" y="0" drill="0.6"/>
-<hole x="3.65" y="0" drill="0.6"/>
-<hole x="3.65" y="0.3" drill="0.6"/>
-<hole x="3.65" y="0.6" drill="0.6"/>
-<hole x="3.65" y="0.9" drill="0.6"/>
-<hole x="3.65" y="-0.3" drill="0.6"/>
-<hole x="3.65" y="-0.6" drill="0.6"/>
-<hole x="3.65" y="-0.9" drill="0.6"/>
-<hole x="-3.65" y="0.6" drill="0.6"/>
-<hole x="-3.65" y="0.9" drill="0.6"/>
-<hole x="-3.65" y="-0.3" drill="0.6"/>
-<hole x="-3.65" y="-0.6" drill="0.6"/>
-<hole x="-3.65" y="-0.9" drill="0.6"/>
-</package>
-<package name="MC32599">
-<pad name="D+" x="0" y="0" drill="0.7" diameter="1.016" shape="offset" rot="R270"/>
-<pad name="GND" x="-1.6" y="0" drill="0.7" diameter="1.016" shape="offset" rot="R270"/>
-<pad name="V_BUS" x="1.6" y="0" drill="0.7" diameter="1.016" shape="offset" rot="R270"/>
-<pad name="D-" x="0.8" y="1.2" drill="0.7" diameter="1.016" shape="offset" rot="R90"/>
-<pad name="N/C" x="-0.8" y="1.2" drill="0.7" diameter="1.016" shape="offset" rot="R90"/>
-<pad name="SH_2" x="-3.65" y="0.9" drill="1.6"/>
-<pad name="SH_3" x="3.65" y="0.9" drill="1.6"/>
-<pad name="SH_1" x="3.65" y="5.55" drill="1.6"/>
-<pad name="SH_0" x="-3.65" y="5.55" drill="1.6"/>
-<wire x1="-3.85" y1="8.7" x2="3.85" y2="8.7" width="0.127" layer="21"/>
-<wire x1="3.85" y1="8.7" x2="3.85" y2="-1.8" width="0.127" layer="21"/>
-<wire x1="3.85" y1="-1.8" x2="-3.85" y2="-1.8" width="0.127" layer="21"/>
-<wire x1="-3.85" y1="-1.8" x2="-3.85" y2="8.7" width="0.127" layer="21"/>
-<text x="-3.81" y="-3.81" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
-</package>
 <package name="KPJX-4S">
 <description>Mouser Part #: 806-KPJX-4S-S
 Manufacturer Part #: KPJX-4S-S
@@ -3339,67 +3322,123 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <text x="21.59" y="-2.54" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left">&gt;LABEL19</text>
 <text x="24.13" y="-2.54" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left">&gt;LABEL20</text>
 </package>
+<package name="26-64-4050(KEYPIN1)">
+<wire x1="11.055" y1="3.8862" x2="-9.6834" y2="3.8862" width="0.127" layer="21"/>
+<pad name="P$1" x="-3.96" y="0" drill="1.7"/>
+<pad name="P$2" x="0" y="0" drill="1.7"/>
+<pad name="P$3" x="3.96" y="0" drill="1.7"/>
+<pad name="P$4" x="7.92" y="0" drill="1.7"/>
+<text x="0.15" y="12.7762" size="1.016" layer="21" font="vector" ratio="16" align="center">&gt;NAME</text>
+<wire x1="-11.055" y1="5" x2="-11.055" y2="3.89" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="3.89" x2="-11.055" y2="-5" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="-5" x2="11.055" y2="-5" width="0.127" layer="21"/>
+<wire x1="11.055" y1="-5" x2="11.055" y2="3.8862" width="0.127" layer="21"/>
+<wire x1="11.055" y1="3.8862" x2="11.055" y2="3.89" width="0.127" layer="21"/>
+<wire x1="11.055" y1="3.89" x2="11.055" y2="5" width="0.127" layer="21"/>
+<wire x1="11.055" y1="5" x2="-11.055" y2="5" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="3.89" x2="11.055" y2="3.89" width="0.127" layer="21"/>
+<text x="7.92" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL04</text>
+<text x="3.96" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL03</text>
+<text x="0" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-right">&gt;LABEL02</text>
+<text x="-3.96" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-right">&gt;LABEL01</text>
+<hole x="-5.975" y="-4.24" drill="1.6"/>
+<hole x="5.975" y="-4.24" drill="1.6"/>
+<circle x="-7.92" y="0" radius="1.27" width="0.127" layer="21"/>
+</package>
+<package name="26-64-4050(KEYPIN2)">
+<wire x1="11.055" y1="3.8862" x2="-9.6834" y2="3.8862" width="0.127" layer="21"/>
+<pad name="P$1" x="-7.92" y="0" drill="1.7"/>
+<pad name="P$2" x="0" y="0" drill="1.7"/>
+<pad name="P$3" x="3.96" y="0" drill="1.7"/>
+<pad name="P$4" x="7.92" y="0" drill="1.7"/>
+<text x="0.15" y="12.7762" size="1.016" layer="21" font="vector" ratio="16" align="center">&gt;NAME</text>
+<wire x1="-11.055" y1="5" x2="-11.055" y2="3.89" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="3.89" x2="-11.055" y2="-5" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="-5" x2="11.055" y2="-5" width="0.127" layer="21"/>
+<wire x1="11.055" y1="-5" x2="11.055" y2="3.8862" width="0.127" layer="21"/>
+<wire x1="11.055" y1="3.8862" x2="11.055" y2="3.89" width="0.127" layer="21"/>
+<wire x1="11.055" y1="3.89" x2="11.055" y2="5" width="0.127" layer="21"/>
+<wire x1="11.055" y1="5" x2="-11.055" y2="5" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="3.89" x2="11.055" y2="3.89" width="0.127" layer="21"/>
+<text x="7.92" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL04</text>
+<text x="3.96" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL03</text>
+<text x="0" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-right">&gt;LABEL02</text>
+<text x="-7.92" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-right">&gt;LABEL01</text>
+<hole x="-5.975" y="-4.24" drill="1.6"/>
+<hole x="5.975" y="-4.24" drill="1.6"/>
+<circle x="-3.96" y="0" radius="1.27" width="0.127" layer="21"/>
+</package>
+<package name="26-64-4050(KEYPIN3)">
+<wire x1="11.055" y1="3.8862" x2="-9.6834" y2="3.8862" width="0.127" layer="21"/>
+<pad name="P$1" x="-7.92" y="0" drill="1.7"/>
+<pad name="P$2" x="-3.96" y="0" drill="1.7"/>
+<pad name="P$3" x="3.96" y="0" drill="1.7"/>
+<pad name="P$4" x="7.92" y="0" drill="1.7"/>
+<text x="0.15" y="12.7762" size="1.016" layer="21" font="vector" ratio="16" align="center">&gt;NAME</text>
+<wire x1="-11.055" y1="5" x2="-11.055" y2="3.89" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="3.89" x2="-11.055" y2="-5" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="-5" x2="11.055" y2="-5" width="0.127" layer="21"/>
+<wire x1="11.055" y1="-5" x2="11.055" y2="3.8862" width="0.127" layer="21"/>
+<wire x1="11.055" y1="3.8862" x2="11.055" y2="3.89" width="0.127" layer="21"/>
+<wire x1="11.055" y1="3.89" x2="11.055" y2="5" width="0.127" layer="21"/>
+<wire x1="11.055" y1="5" x2="-11.055" y2="5" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="3.89" x2="11.055" y2="3.89" width="0.127" layer="21"/>
+<text x="7.92" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL04</text>
+<text x="3.96" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL03</text>
+<text x="-3.96" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-right">&gt;LABEL02</text>
+<text x="-7.92" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-right">&gt;LABEL01</text>
+<hole x="-5.975" y="-4.24" drill="1.6"/>
+<hole x="5.975" y="-4.24" drill="1.6"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
+</package>
+<package name="26-64-4050(KEYPIN4)">
+<wire x1="11.055" y1="3.8862" x2="-9.6834" y2="3.8862" width="0.127" layer="21"/>
+<pad name="P$1" x="-7.92" y="0" drill="1.7"/>
+<pad name="P$2" x="-3.96" y="0" drill="1.7"/>
+<pad name="P$3" x="0" y="0" drill="1.7"/>
+<pad name="P$4" x="7.92" y="0" drill="1.7"/>
+<text x="0.15" y="12.7762" size="1.016" layer="21" font="vector" ratio="16" align="center">&gt;NAME</text>
+<wire x1="-11.055" y1="5" x2="-11.055" y2="3.89" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="3.89" x2="-11.055" y2="-5" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="-5" x2="11.055" y2="-5" width="0.127" layer="21"/>
+<wire x1="11.055" y1="-5" x2="11.055" y2="3.8862" width="0.127" layer="21"/>
+<wire x1="11.055" y1="3.8862" x2="11.055" y2="3.89" width="0.127" layer="21"/>
+<wire x1="11.055" y1="3.89" x2="11.055" y2="5" width="0.127" layer="21"/>
+<wire x1="11.055" y1="5" x2="-11.055" y2="5" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="3.89" x2="11.055" y2="3.89" width="0.127" layer="21"/>
+<text x="7.92" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL04</text>
+<text x="0" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL03</text>
+<text x="-3.96" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-right">&gt;LABEL02</text>
+<text x="-7.92" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-right">&gt;LABEL01</text>
+<hole x="-5.975" y="-4.24" drill="1.6"/>
+<hole x="5.975" y="-4.24" drill="1.6"/>
+<circle x="3.96" y="0" radius="1.27" width="0.127" layer="21"/>
+</package>
+<package name="26-64-4050(KEYPIN5)">
+<wire x1="11.055" y1="3.8862" x2="-9.6834" y2="3.8862" width="0.127" layer="21"/>
+<pad name="P$1" x="-7.92" y="0" drill="1.7"/>
+<pad name="P$2" x="-3.96" y="0" drill="1.7"/>
+<pad name="P$3" x="0" y="0" drill="1.7"/>
+<pad name="P$4" x="3.96" y="0" drill="1.7"/>
+<text x="0.15" y="12.7762" size="1.016" layer="21" font="vector" ratio="16" align="center">&gt;NAME</text>
+<wire x1="-11.055" y1="5" x2="-11.055" y2="3.89" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="3.89" x2="-11.055" y2="-5" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="-5" x2="11.055" y2="-5" width="0.127" layer="21"/>
+<wire x1="11.055" y1="-5" x2="11.055" y2="3.8862" width="0.127" layer="21"/>
+<wire x1="11.055" y1="3.8862" x2="11.055" y2="3.89" width="0.127" layer="21"/>
+<wire x1="11.055" y1="3.89" x2="11.055" y2="5" width="0.127" layer="21"/>
+<wire x1="11.055" y1="5" x2="-11.055" y2="5" width="0.127" layer="21"/>
+<wire x1="-11.055" y1="3.89" x2="11.055" y2="3.89" width="0.127" layer="21"/>
+<text x="3.96" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL04</text>
+<text x="0" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL03</text>
+<text x="-3.96" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-right">&gt;LABEL02</text>
+<text x="-7.92" y="5.715" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-right">&gt;LABEL01</text>
+<hole x="-5.975" y="-4.24" drill="1.6"/>
+<hole x="5.975" y="-4.24" drill="1.6"/>
+<circle x="7.92" y="0" radius="1.27" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
-<symbol name="USB_5PIN">
-<pin name="5V" x="12.7" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="D-" x="12.7" y="-5.08" visible="off" length="short" rot="R180"/>
-<pin name="D+" x="12.7" y="-7.62" visible="off" length="short" rot="R180"/>
-<pin name="GND" x="12.7" y="-12.7" visible="off" length="short" rot="R180"/>
-<pin name="ID" x="12.7" y="-10.16" visible="off" length="short" rot="R180"/>
-<text x="5.08" y="-1.524" size="1.016" layer="97" font="vector" align="bottom-center">USB PORT</text>
-<wire x1="10.16" y1="0" x2="10.16" y2="-17.78" width="0.127" layer="94"/>
-<wire x1="10.16" y1="-17.78" x2="0" y2="-17.78" width="0.127" layer="94"/>
-<wire x1="0" y1="-17.78" x2="0" y2="0" width="0.127" layer="94"/>
-<wire x1="0" y1="0" x2="10.16" y2="0" width="0.127" layer="94"/>
-<text x="0" y="5.08" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
-<text x="0" y="2.54" size="1.016" layer="96" font="vector">&gt;VALUE</text>
-<pin name="SLD" x="12.7" y="-15.24" visible="off" length="short" direction="pwr" rot="R180"/>
-<text x="9.652" y="-2.54" size="1.016" layer="97" font="vector" align="center-right">5V</text>
-<text x="9.652" y="-5.08" size="1.016" layer="97" font="vector" align="center-right">D-</text>
-<text x="9.652" y="-7.62" size="1.016" layer="97" font="vector" align="center-right">D+</text>
-<text x="9.652" y="-10.16" size="1.016" layer="97" font="vector" align="center-right">ID</text>
-<text x="9.652" y="-12.7" size="1.016" layer="97" font="vector" align="center-right">GND</text>
-<text x="9.652" y="-15.24" size="1.016" layer="97" font="vector" align="center-right">SHIELD</text>
-<polygon width="0.254" layer="94">
-<vertex x="3.175" y="-4.445"/>
-<vertex x="3.81" y="-3.175"/>
-<vertex x="4.445" y="-4.445"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="1.905" y="-7.3025" curve="-90"/>
-<vertex x="2.2225" y="-7.62" curve="-90"/>
-<vertex x="1.905" y="-7.9375" curve="-90"/>
-<vertex x="1.5875" y="-7.62" curve="-90"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="5.3975" y="-6.0325"/>
-<vertex x="5.3975" y="-6.6675"/>
-<vertex x="6.0325" y="-6.6675"/>
-<vertex x="6.0325" y="-6.0325"/>
-</polygon>
-<wire x1="3.81" y1="-11.215840625" x2="3.81" y2="-9.945840625" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-9.945840625" x2="3.81" y2="-4.445" width="0.254" layer="94"/>
-<wire x1="5.417421875" y1="-7.917578125" x2="4.107578125" y2="-9.227421875" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-7.62" x2="1.905" y2="-8.469159375" width="0.254" layer="94"/>
-<wire x1="2.202578125" y1="-9.187578125" x2="3.512421875" y2="-10.497421875" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-8.469159375" x2="2.202578125" y2="-9.187578125" width="0.254" layer="94" curve="44.999875"/>
-<wire x1="5.715" y1="-6.35" x2="5.715" y2="-7.199159375" width="0.254" layer="94"/>
-<wire x1="5.715" y1="-7.199159375" x2="5.417421875" y2="-7.917578125" width="0.254" layer="94" curve="-44.999875"/>
-<wire x1="3.81" y1="-11.43" x2="3.81" y2="-11.215840625" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-11.215840625" x2="3.512421875" y2="-10.497421875" width="0.254" layer="94" curve="44.999875"/>
-<wire x1="3.81" y1="-9.945840625" x2="4.107578125" y2="-9.227421875" width="0.254" layer="94" curve="-44.999875"/>
-<polygon width="0.254" layer="94">
-<vertex x="3.8735" y="-13.335"/>
-<vertex x="3.7465" y="-13.335" curve="-90"/>
-<vertex x="2.8575" y="-12.446"/>
-<vertex x="2.8575" y="-12.319" curve="-90"/>
-<vertex x="3.7465" y="-11.43"/>
-<vertex x="3.8735" y="-11.43" curve="-90"/>
-<vertex x="4.7625" y="-12.319"/>
-<vertex x="4.7625" y="-12.446" curve="-90"/>
-</polygon>
-</symbol>
 <symbol name="CON_01X04">
 <description>Symbol for 4 pin connectors.</description>
 <pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
@@ -3491,52 +3530,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="USB_5PIN" prefix="J" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="USB_5PIN" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="_500075-1517" package="500075-1517">
-<connects>
-<connect gate="G$1" pin="5V" pad="5V"/>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="ID" pad="ID"/>
-<connect gate="G$1" pin="SLD" pad="P$1 P$2 P$3 P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_10118193-0001LF" package="10118193-0001LF">
-<connects>
-<connect gate="G$1" pin="5V" pad="1"/>
-<connect gate="G$1" pin="D+" pad="3"/>
-<connect gate="G$1" pin="D-" pad="2"/>
-<connect gate="G$1" pin="GND" pad="5"/>
-<connect gate="G$1" pin="ID" pad="4"/>
-<connect gate="G$1" pin="SLD" pad="S1 S2 S3 S4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_MC32599" package="MC32599">
-<connects>
-<connect gate="G$1" pin="5V" pad="V_BUS"/>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="ID" pad="N/C"/>
-<connect gate="G$1" pin="SLD" pad="SH_0 SH_1 SH_2 SH_3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CON_01X04" prefix="J" uservalue="yes">
 <description>4 Pin Connectors</description>
 <gates>
@@ -3615,7 +3608,12 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <connect gate="G$1" pin="4" pad="GND"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+<attribute name="LABEL04" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_90148-1204" package="90148-1204">
@@ -3624,6 +3622,86 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <connect gate="G$1" pin="2" pad="P$3 P$4"/>
 <connect gate="G$1" pin="3" pad="P$5 P$6"/>
 <connect gate="G$1" pin="4" pad="P$7 P$8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+<attribute name="LABEL04" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_26-64-4050(KEYPIN1)" package="26-64-4050(KEYPIN1)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+<attribute name="LABEL04" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_26-64-4050(KEYPIN2)" package="26-64-4050(KEYPIN2)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+<attribute name="LABEL04" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_26-64-4050(KEYPIN3)" package="26-64-4050(KEYPIN3)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+<attribute name="LABEL04" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_26-64-4050(KEYPIN4)" package="26-64-4050(KEYPIN4)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+<attribute name="LABEL04" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_26-64-4050(KEYPIN5)" package="26-64-4050(KEYPIN5)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
 </connects>
 <technologies>
 <technology name="">
@@ -3975,6 +4053,21 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="1" y1="1.5" x2="1" y2="1" width="0.127" layer="21"/>
 <text x="-3" y="-2.5" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 </package>
+<package name="LED_1MM_X_0.5MM">
+<smd name="CATHODE" x="-0.5" y="0" dx="0.65" dy="0.9" layer="1"/>
+<smd name="ANODE" x="0.5" y="0" dx="0.65" dy="0.9" layer="1"/>
+<text x="-1.389" y="0.7985" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<wire x1="1.07" y1="0.635" x2="1.07" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.07" y1="-0.635" x2="-1.07" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.07" y1="-0.635" x2="-1.07" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-1.07" y1="0.635" x2="1.07" y2="0.635" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-1.07" y="0.635"/>
+<vertex x="-1.375" y="0.635"/>
+<vertex x="-1.375" y="-0.635"/>
+<vertex x="-1.07" y="-0.635"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="LED_SINGLE">
@@ -4041,6 +4134,15 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <technology name=""/>
 </technologies>
 </device>
+<device name="_1MM_X_0.5MM" package="LED_1MM_X_0.5MM">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -4092,6 +4194,63 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <text x="6.47375" y="9.225" size="0.6096" layer="51" font="vector" ratio="16">Card Lock Position</text>
 <text x="6.47375" y="8.225" size="0.6096" layer="51" font="vector" ratio="16">Card Push In</text>
 <wire x1="0.4" y1="-7.625" x2="3.72375" y2="-7.625" width="0.127" layer="21"/>
+</package>
+<package name="MICROUSB-RIGHT">
+<description>&lt;b&gt;Description:&lt;/b&gt; Package for Micro USB Type B connector. Based on FCI 10118193-0001LF.&lt;br&gt;</description>
+<smd name="3" x="0" y="1.27" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="4" x="0.65" y="1.27" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="2" x="-0.65" y="1.27" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="1" x="-1.3" y="1.27" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="5" x="1.3" y="1.27" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="S3" x="-3.2" y="1.27" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="S4" x="3.2" y="1.27" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+<text x="-5.08" y="2.7" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<wire x1="-5.08" y1="-2.855" x2="5.08" y2="-2.855" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.855" x2="-5.08" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="1.3" x2="-4.08" y2="2.3" width="0.127" layer="21"/>
+<wire x1="-4.08" y1="2.3" x2="4.08" y2="2.3" width="0.127" layer="21"/>
+<wire x1="4.08" y1="2.3" x2="5.08" y2="1.3" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.3" x2="5.08" y2="-2.855" width="0.127" layer="21"/>
+<smd name="S5" x="-1.2" y="-1.405" dx="1.9" dy="1.9" layer="1"/>
+<smd name="S6" x="1.2" y="-1.405" dx="1.9" dy="1.9" layer="1"/>
+<smd name="S1" x="-3.3" y="-1.4" dx="0.9" dy="1.6" layer="1" roundness="100" rot="R180"/>
+<smd name="S2" x="3.3" y="-1.4" dx="0.9" dy="1.6" layer="1" roundness="100" rot="R180"/>
+<wire x1="-3.55" y1="-1.05" x2="-3.55" y2="-1.75" width="0.01" layer="20"/>
+<wire x1="-3.55" y1="-1.75" x2="-3.3" y2="-2" width="0.01" layer="20" curve="90"/>
+<wire x1="-3.3" y1="-2" x2="-3.05" y2="-1.75" width="0.01" layer="20" curve="90"/>
+<wire x1="-3.05" y1="-1.75" x2="-3.05" y2="-1.05" width="0.01" layer="20"/>
+<wire x1="-3.05" y1="-1.05" x2="-3.3" y2="-0.8" width="0.01" layer="20" curve="90"/>
+<wire x1="-3.3" y1="-0.8" x2="-3.55" y2="-1.05" width="0.01" layer="20" curve="90"/>
+<wire x1="3.05" y1="-1.05" x2="3.05" y2="-1.75" width="0.01" layer="20"/>
+<wire x1="3.05" y1="-1.75" x2="3.3" y2="-2" width="0.01" layer="20" curve="90"/>
+<wire x1="3.3" y1="-2" x2="3.55" y2="-1.75" width="0.01" layer="20" curve="90"/>
+<wire x1="3.55" y1="-1.75" x2="3.55" y2="-1.05" width="0.01" layer="20"/>
+<wire x1="3.55" y1="-1.05" x2="3.3" y2="-0.8" width="0.01" layer="20" curve="90"/>
+<wire x1="3.3" y1="-0.8" x2="3.05" y2="-1.05" width="0.01" layer="20" curve="90"/>
+<smd name="S7" x="-3.3" y="-1.4" dx="0.9" dy="1.6" layer="16" roundness="100" rot="R180" cream="no"/>
+<smd name="S8" x="3.3" y="-1.4" dx="0.9" dy="1.6" layer="16" roundness="100" rot="R180" cream="no"/>
+</package>
+<package name="MINIUSB-RIGHT">
+<description>&lt;b&gt;Description:&lt;/b&gt; Package for Mini USB Type B connector. Based on 4UCON 20236.&lt;br&gt;</description>
+<smd name="1" x="-1.6" y="0" dx="0.5" dy="2.25" layer="1"/>
+<smd name="2" x="-0.8" y="0" dx="0.5" dy="2.25" layer="1"/>
+<smd name="3" x="0" y="0" dx="0.5" dy="2.25" layer="1"/>
+<smd name="4" x="0.8" y="0" dx="0.5" dy="2.25" layer="1"/>
+<smd name="5" x="1.6" y="0" dx="0.5" dy="2.25" layer="1"/>
+<smd name="S1" x="-4.45" y="-0.125" dx="2" dy="2.5" layer="1"/>
+<smd name="S3" x="-4.45" y="-5.5" dx="2" dy="2.5" layer="1"/>
+<smd name="S4" x="4.45" y="-5.5" dx="2" dy="2.5" layer="1"/>
+<smd name="S2" x="4.45" y="-0.125" dx="2" dy="2.5" layer="1"/>
+<hole x="-2.2" y="-2.675" drill="0.9"/>
+<hole x="2.2" y="-2.675" drill="0.9"/>
+<wire x1="-3.8" y1="-1.75" x2="-3.8" y2="-4" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="-7" x2="-3.8" y2="-8.575" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="-8.575" x2="3.8" y2="-8.575" width="0.127" layer="21"/>
+<wire x1="-2.25" y1="0.625" x2="-3.05" y2="0.625" width="0.127" layer="21"/>
+<wire x1="2.25" y1="0.625" x2="3.05" y2="0.625" width="0.127" layer="21"/>
+<wire x1="3.8" y1="-7" x2="3.8" y2="-8.575" width="0.127" layer="21"/>
+<wire x1="3.8" y1="-1.75" x2="3.8" y2="-4" width="0.127" layer="21"/>
+<text x="-3.8" y="1.5" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -4145,6 +4304,66 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="11.43" y1="-9.89" x2="11.43" y2="-13.97" width="0.127" layer="94"/>
 <text x="7.62" y="-1.27" size="1.016" layer="97" font="vector" align="center">SD CARD SLOT</text>
 </symbol>
+<symbol name="USB_5PIN">
+<description>&lt;b&gt;Description:&lt;/b&gt; Symbol for 5-Pin USB connectors.&lt;br&gt;</description>
+<pin name="5V" x="7.62" y="5.08" visible="off" length="short" direction="pwr" rot="R180"/>
+<pin name="D-" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="D+" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<pin name="GND" x="7.62" y="-5.08" visible="off" length="short" direction="pwr" rot="R180"/>
+<text x="0" y="6.096" size="1.016" layer="97" font="vector" align="bottom-center">USB PORT</text>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-10.16" width="0.127" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.127" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="7.62" width="0.127" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.127" layer="94"/>
+<text x="-5.08" y="12.7" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="10.16" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+<pin name="ID" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="SLD" x="7.62" y="-7.62" visible="off" length="short" direction="pwr" rot="R180"/>
+<text x="4.572" y="5.08" size="1.016" layer="97" font="vector" align="center-right">5V</text>
+<text x="4.572" y="2.54" size="1.016" layer="97" font="vector" align="center-right">D-</text>
+<text x="4.572" y="0" size="1.016" layer="97" font="vector" align="center-right">D+</text>
+<text x="4.572" y="-2.54" size="1.016" layer="97" font="vector" align="center-right">ID</text>
+<text x="4.572" y="-5.08" size="1.016" layer="97" font="vector" align="center-right">GND</text>
+<text x="4.572" y="-7.62" size="1.016" layer="97" font="vector" align="center-right">SHIELD</text>
+<polygon width="0.254" layer="94">
+<vertex x="-1.905" y="3.175"/>
+<vertex x="-1.27" y="4.445"/>
+<vertex x="-0.635" y="3.175"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-3.175" y="0.3175" curve="-90"/>
+<vertex x="-2.8575" y="0" curve="-90"/>
+<vertex x="-3.175" y="-0.3175" curve="-90"/>
+<vertex x="-3.4925" y="0" curve="-90"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="0.3175" y="1.5875"/>
+<vertex x="0.3175" y="0.9525"/>
+<vertex x="0.9525" y="0.9525"/>
+<vertex x="0.9525" y="1.5875"/>
+</polygon>
+<wire x1="-1.27" y1="-3.595840625" x2="-1.27" y2="-2.325840625" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.325840625" x2="-1.27" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0.337421875" y1="-0.297578125" x2="-0.972421875" y2="-1.607421875" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="0" x2="-3.175" y2="-0.849159375" width="0.254" layer="94"/>
+<wire x1="-2.877421875" y1="-1.567578125" x2="-1.567578125" y2="-2.877421875" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="-0.849159375" x2="-2.877421875" y2="-1.567578125" width="0.254" layer="94" curve="44.999875"/>
+<wire x1="0.635" y1="1.27" x2="0.635" y2="0.420840625" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0.420840625" x2="0.337421875" y2="-0.297578125" width="0.254" layer="94" curve="-44.999875"/>
+<wire x1="-1.27" y1="-3.81" x2="-1.27" y2="-3.595840625" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-3.595840625" x2="-1.567578125" y2="-2.877421875" width="0.254" layer="94" curve="44.999875"/>
+<wire x1="-1.27" y1="-2.325840625" x2="-0.972421875" y2="-1.607421875" width="0.254" layer="94" curve="-44.999875"/>
+<polygon width="0.254" layer="94">
+<vertex x="-1.2065" y="-5.715"/>
+<vertex x="-1.3335" y="-5.715" curve="-90"/>
+<vertex x="-2.2225" y="-4.826"/>
+<vertex x="-2.2225" y="-4.699" curve="-90"/>
+<vertex x="-1.3335" y="-3.81"/>
+<vertex x="-1.2065" y="-3.81" curve="-90"/>
+<vertex x="-0.3175" y="-4.699"/>
+<vertex x="-0.3175" y="-4.826" curve="-90"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SD_CARD_SLOT" prefix="SD" uservalue="yes">
@@ -4165,6 +4384,41 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <connect gate="G$1" pin="IRQ" pad="PIN8"/>
 <connect gate="G$1" pin="RW" pad="PIN1"/>
 <connect gate="G$1" pin="SCLK" pad="PIN5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB" prefix="J" uservalue="yes">
+<description>&lt;b&gt;Library:&lt;/b&gt;  MF_Connectors&lt;br/&gt;
+&lt;b&gt;Description:&lt;/b&gt; 5 Pin USB Connectors. SLD is the shield connection. Usually tied to ground through a small ferrite bead.&lt;br/&gt;</description>
+<gates>
+<gate name="G$1" symbol="USB_5PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_MICRO_RIGHT" package="MICROUSB-RIGHT">
+<connects>
+<connect gate="G$1" pin="5V" pad="1"/>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="ID" pad="4"/>
+<connect gate="G$1" pin="SLD" pad="S1 S2 S3 S4 S5 S6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_MINI_RIGHT" package="MINIUSB-RIGHT">
+<connects>
+<connect gate="G$1" pin="5V" pad="1"/>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="ID" pad="4"/>
+<connect gate="G$1" pin="SLD" pad="S1 S2 S3 S4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4894,7 +5148,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="R3" library="PP_Passives" deviceset="RESISTOR" device="_0603" value="100K"/>
 <part name="R18" library="PP_Passives" deviceset="RESISTOR" device="_0603" value="25K"/>
 <part name="SD1" library="MF_Connectors" deviceset="SD_CARD_SLOT" device="_MICRO_RIGHT" value="MF-CON-MICROSDSLOT-RIGHT"/>
-<part name="J1" library="PP_Connectors" deviceset="USB_5PIN" device="_10118193-0001LF" value="MF-CON-MICROUSB-RIGHT"/>
 <part name="X1" library="MF_Frequency_Control" deviceset="XTL" device="_7MMX5MM" value="ABMM-6.000MHZ-B2-T"/>
 <part name="RESET" library="MF_Switches" deviceset="TACT" device="_4.2MM" value="MF-SW-TACT-4.2MM"/>
 <part name="U6" library="MF_IC_Power" deviceset="NCP1117LP" device="ST33T3G"/>
@@ -4908,6 +5161,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="J3" library="PP_Connectors" deviceset="CON_01X04" device="_2.54MM_PIN_HEADER"/>
 <part name="J4" library="PP_Connectors" deviceset="CON_01X20" device="_2.54MM_PIN_HEADER" value="M20-7822046"/>
 <part name="J5" library="PP_Connectors" deviceset="CON_01X20" device="_2.54MM_PIN_HEADER" value="M20-7822046"/>
+<part name="J1" library="MF_Connectors" deviceset="USB" device="_MICRO_RIGHT" value="MF-CON-MICROUSB-RIGHT"/>
 </parts>
 <sheets>
 <sheet>
@@ -4963,7 +5217,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <instance part="R3" gate="G$1" x="-76.2" y="200.66" rot="R90"/>
 <instance part="R18" gate="G$1" x="-76.2" y="185.42" rot="R90"/>
 <instance part="SD1" gate="G$1" x="-231.14" y="177.8" rot="MR180"/>
-<instance part="J1" gate="G$1" x="-386.08" y="259.08"/>
 <instance part="X1" gate="G$1" x="-144.78" y="254" smashed="yes" rot="R180">
 <attribute name="NAME" x="-142.24" y="259.08" size="0.8128" layer="95" font="vector" align="top-left"/>
 <attribute name="VALUE" x="-142.24" y="256.54" size="0.8128" layer="96" font="vector"/>
@@ -4992,6 +5245,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <instance part="J3" gate="G$1" x="-101.6" y="195.58"/>
 <instance part="J4" gate="G$1" x="-127" y="254"/>
 <instance part="J5" gate="G$1" x="-101.6" y="254"/>
+<instance part="J1" gate="G$1" x="-381" y="251.46"/>
 </instances>
 <busses>
 </busses>
@@ -5016,12 +5270,12 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <segment>
 <wire x1="-373.38" y1="246.38" x2="-370.84" y2="246.38" width="0.1524" layer="91"/>
 <label x="-368.3" y="246.38" size="0.8128" layer="95" font="vector"/>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<pinref part="J1" gate="G$1" pin="SLD"/>
 <wire x1="-370.84" y1="246.38" x2="-365.76" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="-373.38" y1="243.84" x2="-370.84" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="-370.84" y1="243.84" x2="-370.84" y2="246.38" width="0.1524" layer="91"/>
 <junction x="-370.84" y="246.38"/>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="SLD"/>
 </segment>
 <segment>
 <wire x1="-358.14" y1="220.98" x2="-350.52" y2="220.98" width="0.1524" layer="91"/>
